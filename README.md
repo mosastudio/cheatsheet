@@ -1,8 +1,6 @@
 ## Cheat Sheet
 
-### Table of Contents
-
-* TODO, the link to following items
+This is my cheet sheet.
 
 ## Programming
 
@@ -11,12 +9,6 @@
 * [JSON to CSV](https://json-csv.com/)
 
 ## More
+* [Git](git.md)
 * [iOS App](iosapp.md)
-
-## Git
-
-*
-*
-*
-
-## JavaScript
+* [JavaScript](javascript.md)

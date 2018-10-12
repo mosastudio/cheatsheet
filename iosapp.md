@@ -14,6 +14,15 @@
 * [App Icon Maker](http://appiconmaker.co/)
 * [App Screenshot Maker](https://appinstitute.com/app-screenshot-maker/)
 
+### Xcode
+
+* [SO Thread, Save disk space](https://apple.stackexchange.com/questions/287307/reduce-size-of-the-xcode-application)
+  * DerivedData
+  * iOS DeviceSupport
+  * Archives
+  * Simulators
+* Install [DevCleaner](https://itunes.apple.com/us/app/devcleaner/id1388020431) on Mac
+
 ## WWDC Sessions
 
 ## Objective-C

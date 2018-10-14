@@ -3,7 +3,9 @@
 ## Apple
 * [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
 * [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/)
+* [iOS Data Storage Guidelines](https://developer.apple.com/icloud/documentation/data-storage/index.html)
 * [OS Percentage](https://developer.apple.com/support/app-store/)
+  * iOS 12 - 50%, iOS 11 - 39%, earlier - 11% (Oct. 10 2018)
 * [Device Compatibility](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/DeviceCompatibilityMatrix/DeviceCompatibilityMatrix.html)
 
 ## Other
@@ -77,10 +79,10 @@ $ pod update
 
 | |iPhone|iPhone X|
 |-|-|-|
-|Power Off| |(1) Volume Up -> Volume Down -> Power (Keep Pressing), or (2) Volume Up + Power (Keep Pressing), or (3) Volume Down + Power (Keep Pressing) |
+|Power Off| |(1) Volume Up -> Volume Down -> Power (Keep Pressing)|
+|Power Off| |(2) Volume Up + Power (Keep Pressing)|
+|Power Off| |(3) Volume Down + Power (Keep Pressing) |
 |Snapshot|Home + Power|Volume Up + Power|
-
-## WWDC Sessions
 
 ## Common
 
@@ -89,6 +91,8 @@ $ pod update
   * X: custom subclass
   * X: UIWebView
   * ?: localization (not sure, there seems to be much limitation)
+
+## WWDC Sessions
 
 ## Objective-C
 

@@ -7,6 +7,15 @@ This is my cheet sheet.
 * [Epoch & Unix Timestamp Conversion Tools](https://www.epochconverter.com/)
 * [Jeffrey's Image Metadata Viewer](http://exif.regex.info/exif.cgi)
 * [JSON to CSV](https://json-csv.com/)
+* [TCP and UDP port numbers](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
+
+## Mac OS
+
+* [Homebrew](https://brew.sh/), The missing package manager for macOS
+  * Install Homebrew, $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  * $ brea update
+  * $ brew install
+  * ex. mongodb, nvm, wget, ..
 
 ## Code together
 

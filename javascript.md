@@ -170,3 +170,6 @@ countSubString("1 ");   // 2
 countSubString(" 1 ");  // 3
 ```
 
+## Promise
+
+* [Ref, MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)

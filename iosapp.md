@@ -13,6 +13,15 @@
 * [Material icons, Google](https://material.io/tools/icons/)
 * [App Icon Maker](http://appiconmaker.co/)
 * [App Screenshot Maker](https://appinstitute.com/app-screenshot-maker/)
+
+## Xcode
+
+* Save disk space, [SO Thread](https://apple.stackexchange.com/questions/287307/reduce-size-of-the-xcode-application)
+  * DerivedData
+  * iOS DeviceSupport
+  * Archives
+  * Simulators
+* Save disk space, install [DevCleaner](https://itunes.apple.com/us/app/devcleaner/id1388020431) on Mac
 * check the files on an actual iOS device
   * Launch Xcode
   * Window
@@ -22,15 +31,21 @@
   * Gear icon
   * Download Container
   * Go to Finder, "Show Package Contents"
+* There is error when launching app in simulator
+  * quit Xcode
+  * quit iOS simulator
 
-## Xcode
+```sh
+# check the path of DerivedData
+$ cd ~/Library/Developer/Xcode
+$ ls -l
 
-* [SO Thread, Save disk space](https://apple.stackexchange.com/questions/287307/reduce-size-of-the-xcode-application)
-  * DerivedData
-  * iOS DeviceSupport
-  * Archives
-  * Simulators
-* Install [DevCleaner](https://itunes.apple.com/us/app/devcleaner/id1388020431) on Mac
+# backup the old files
+$ mkdir DerivedData_20181010
+
+$ cd DerivedData
+$ mv {YourAppName}-* ../DerivedData_20181010/
+```
 
 ## How-to
 

@@ -14,6 +14,14 @@
 * [App Icon Maker](http://appiconmaker.co/)
 * [App Screenshot Maker](https://appinstitute.com/app-screenshot-maker/)
 
+| |bounds, scale|nativeBounds, nativeScale|
+|-|-|-|
+|iPhone 7+|414x736, 3|1080x1920, 2.608696|
+|iPhone 7+(&)|375x667, 3|1080x1920, 2.88|
+|iPhone X|375x812, 3|1125x2436, 3|
+
+&: iPhone Settings -> Display & Brightness -> View -> Zoomed
+
 ## Xcode
 
 * Save disk space, [SO Thread](https://apple.stackexchange.com/questions/287307/reduce-size-of-the-xcode-application)
@@ -34,18 +42,7 @@
 * There is error when launching app in simulator
   * quit Xcode
   * quit iOS simulator
-
-```sh
-# check the path of DerivedData
-$ cd ~/Library/Developer/Xcode
-$ ls -l
-
-# backup the old files
-$ mkdir DerivedData_20181010
-
-$ cd DerivedData
-$ mv {YourAppName}-* ../DerivedData_20181010/
-```
+  * backup the files in ~/Library/Developer/Xcode/DerivedData/{YourAppName}-*/
 
 ## How-to
 

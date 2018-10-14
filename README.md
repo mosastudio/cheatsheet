@@ -34,8 +34,6 @@ This is my cheet sheet.
 |int|32 bit|32 bit|32 bit|
 |long|32 bit|64 bit|32 bit|
 |long long|64 bit|64 bit|64 bit|
-|float|32 bit|32 bit|32 bit?|
-|double|64 bit|64 bit|64 bit?|
 |NSInteger|int|long|x|
 |CGFloat|float|double|x|
 

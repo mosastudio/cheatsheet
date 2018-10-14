@@ -26,6 +26,21 @@ This is my cheet sheet.
 * http://collabedit.com/
 * https://codeshare.io/
 
+## 64 bit
+
+| |ILP32|LP64 (ex. mac OS, iOS, Linux)|LLP64 (ex. Win)|
+|-|-|-|-|
+|pointer|32 bit|64 bit|64 bit|
+|int|32 bit|32 bit|32 bit|
+|long|32 bit|64 bit|32 bit|
+|long long|64 bit|64 bit|64 bit|
+|float|32 bit|32 bit|32 bit?|
+|double|64 bit|64 bit|64 bit?|
+|NSInteger|int|long|x|
+|CGFloat|float|double|x|
+
+other: ILP64, SILP64
+
 ## More
 * [Git](git.md)
 * [iOS App](iosapp.md)

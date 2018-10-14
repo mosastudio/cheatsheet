@@ -1,6 +1,6 @@
 ## JavaScript
 
-* JavaScript is compatible with ECMAScript, and it provides additional features. [Ref](https://en.wikipedia.org/wiki/ECMAScript)
+* JavaScript is compatible with ECMAScript, and it provides additional features. [Wiki](https://en.wikipedia.org/wiki/ECMAScript)
 
 | | | |
 |-|-|-|
@@ -132,3 +132,32 @@ parseFloat(string)
 |num.toString(radix)||
 
 ## String
+
+* All string methods return a new value. They do not change the original variable.
+
+|property/method|description|
+|-|-|
+|split(separator, limit)||
+|indexOf()|Returns the position of the first found occurrence of a specified value in a string|
+|lastIndexOf()|Returns the position of the last found occurrence of a specified value in a string|
+|substr(start, length)||
+|toLocaleLowerCase()
+toLocaleUpperCase()
+toLowerCase()
+toUpperCase()||
+|localeCompare(compareString)|result of "abb".localeCompare("baa”); is -1|
+
+```js
+function countSubString(string) {
+  array = string.split(" ");
+  console.log(array.length);
+}
+
+countSubString(" ");  // 2
+countSubString("  ");  // 3
+countSubString("1");  // 1
+countSubString(" 1");  // 2
+countSubString("1 ");  // 2
+countSubString(" 1 ");  // 3
+```
+

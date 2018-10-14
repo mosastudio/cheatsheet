@@ -39,10 +39,10 @@
   * Gear icon
   * Download Container
   * Go to Finder, "Show Package Contents"
-* There is error when launching app in simulator
+* Keep crashing, when launching app in simulator
   * quit Xcode
   * quit iOS simulator
-  * backup the files in ~/Library/Developer/Xcode/DerivedData/{YourAppName}-*/
+  * backup , and delete the files in ~/Library/Developer/Xcode/DerivedData/{YourAppName}-*/
 
 ## How-to
 
@@ -52,6 +52,14 @@
 |Snapshot|Home + Power|Volume Up + Power|
 
 ## WWDC Sessions
+
+## Common
+
+* LaunchScreen.xib
+  * O: UIImageView, UILabel, ..
+  * X: custom subclass
+  * X: UIWebView
+  * ?: localization (not sure, there seems to be much limitation)
 
 ## Objective-C
 

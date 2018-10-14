@@ -13,12 +13,8 @@
 * [node.js](https://nodejs.org/en/): JavaScript runtime built on Chrome's V8 JavaScript engine
 
 * nvm: node version manager
-
-* [npm](https://www.npmjs.com): node package manager
-
-* [nvm installation](https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
-
-* command line
+  * [nvm installation](https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
+  * command line:
 
 ```sh
 # List installed versions (local)
@@ -35,6 +31,19 @@ $ nvm install lts/* --reinstall-packages-from=node
 ## set default node version with NVM (Visual Studio Code refers to 'default')
 $ nvm alias default v8.9.3
 
+```
+
+* [npm](https://www.npmjs.com): node package manager
+  * First release, 1.0.0 -> patch release, 1.0.1 -> minor release, 1.1.0 -> major release 2.0.0
+  * tilde (~), update to the most recent minor version. ~1.2.3 will match all 1.2.x versions, but not 1.3.0
+  * caret (^), update to the most recent major version. ^1.2.3 will match all 1.x.x versions, but not 2.0.0
+  * [semver](https://semver.npmjs.com)
+  * package-lock.json
+  * command line:
+
+```sh
+$ npm install
+$ npm update
 ```
 
 ## Reference

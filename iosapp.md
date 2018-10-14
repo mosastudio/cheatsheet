@@ -44,6 +44,35 @@
   * quit iOS simulator
   * backup , and delete the files in ~/Library/Developer/Xcode/DerivedData/{YourAppName}-*/
 
+## CocoaPods
+
+* [CocoaPods](https://cocoapods.org/), it is a dependency manager for ..
+* Install
+  * $ sudo gem install cocoapods
+* command line, ex.
+
+```sh
+# Xcode -> "Create a new Xcode project" -> name it as "temp" -> quit Xcode
+
+$ cd temp
+
+$ pod init
+# a new file, "Podfile", is created
+
+# edit the file
+
+$ pod install
+# a new file, "Podfile.lock", is created
+
+$ open temp.xcworkspace
+
+# And, some other commands
+$ pod help
+$ pod outdated
+$ pod update
+
+```
+
 ## How-to
 
 | |iPhone|iPhone X|

@@ -7,6 +7,8 @@
 * [OS Percentage](https://developer.apple.com/support/app-store/)
   * iOS 12 - 50%, iOS 11 - 39%, earlier - 11% (Oct. 10 2018)
 * [Device Compatibility](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/DeviceCompatibilityMatrix/DeviceCompatibilityMatrix.html)
+* [Download](https://developer.apple.com/download/)
+* [More Downloads](https://developer.apple.com/download/more/)
 
 ## Other
 

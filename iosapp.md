@@ -89,11 +89,50 @@ $ pod update
 
 ## Common
 
+* Tutorial
+  * [appcoda](http://www.appcoda.com/ios-programming-course/)
+    * Check the new API -> modify the sample code -> run it
+    * [Documenting](https://www.appcoda.com/documenting-source-code-in-xcode/)
+  * [KKBOX](https://legacy.gitbook.com/book/zonble/kkbox-ios-dev/details)
+  * [raywenderlich](https://www.raywenderlich.com/ios/)
+    * [Custom UISlider](https://www.raywenderlich.com/2715-photoshop-tutorial-for-developers-creating-a-custom-uislider)
+    * [Creating a Static Library](https://www.raywenderlich.com/2658-creating-a-static-library-in-ios-tutorial)
+  * [NYTimes Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)
 * LaunchScreen.xib
   * O: UIImageView, UILabel, ..
   * X: custom subclass
   * X: UIWebView
   * ?: localization (not sure, there seems to be much limitation)
+* Background mode
+  * [Apple](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html)
+  * [raywenderlich](https://www.raywenderlich.com/5817-background-modes-tutorial-getting-started)
+  * (related) Finite-Length Tasks, UIBackgroundTaskIdentifier
+  * Xcode, Targets -> Capabilities -> Background Modes
+    * Audio
+    * Location updates
+    * External accessory communication, for MFi devices
+    * Uses Bluetooth LE accessories, act as bluetooth-central. To scan in the background, the app need to listen for particular BLE service
+    * Remote notifications
+
+## Drawing
+
+* [Apple, iOS Drawing Concepts](https://developer.apple.com/library/archive/documentation/2DDrawing/Conceptual/DrawingPrintingiOS/GraphicsDrawingOverview/GraphicsDrawingOverview.html)
+* raywenderlich, objective c
+  * [line, rect, gradient](https://www.raywenderlich.com/2746-core-graphics-tutorial-lines-rectangles-and-gradients)
+  * [shadow, gloss](https://www.raywenderlich.com/2745-core-graphics-tutorial-shadows-and-gloss)
+  * [arc, path](https://www.raywenderlich.com/2743-core-graphics-tutorial-arcs-and-paths)
+  * [gloss](https://www.raywenderlich.com/2744-core-graphics-tutorial-glossy-buttons)
+  * [pattern](https://www.raywenderlich.com/2742-core-graphics-tutorial-patterns)
+  * [curve, layer](https://www.raywenderlich.com/2741-core-graphics-tutorial-curves-and-layers)
+* gradient
+  * [example, SO Thread](https://stackoverflow.com/questions/20632365/draw-gradient-along-a-curved-uibezierpath)
+
+```objective-c
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(/* .. */)
+    CGContextDrawLinearGradient(context, gradient, /* .. */
+    CGGradientRelease(gradient);
+    gradient = NULL;
+```
 
 ## WWDC Sessions
 

@@ -14,9 +14,6 @@
 
 * [iOS Support Matrix, device, iOS version](http://iossupportmatrix.com/)
 * [iPhone Resolutions](https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions)
-* [Material icons, Google](https://material.io/tools/icons/)
-* [App Icon Maker](http://appiconmaker.co/)
-* [App Screenshot Maker](https://appinstitute.com/app-screenshot-maker/)
 
 | |bounds, scale|nativeBounds, nativeScale|
 |-|-|-|
@@ -25,6 +22,10 @@
 |iPhone X|375x812, 3|1125x2436, 3|
 
 &: iPhone Settings -> Display & Brightness -> View -> Zoomed
+
+* [Material icons, Google](https://material.io/tools/icons/)
+* [App Icon Maker](http://appiconmaker.co/)
+* [App Screenshot Maker](https://appinstitute.com/app-screenshot-maker/)
 
 ## Xcode
 

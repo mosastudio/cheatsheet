@@ -98,11 +98,13 @@ $ pod update
     * [Custom UISlider](https://www.raywenderlich.com/2715-photoshop-tutorial-for-developers-creating-a-custom-uislider)
     * [Creating a Static Library](https://www.raywenderlich.com/2658-creating-a-static-library-in-ios-tutorial)
   * [NYTimes Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)
+
 * LaunchScreen.xib
   * O: UIImageView, UILabel, ..
   * X: custom subclass
   * X: UIWebView
   * ?: localization (not sure, there seems to be much limitation)
+
 * Background mode
   * [Apple](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html)
   * [raywenderlich](https://www.raywenderlich.com/5817-background-modes-tutorial-getting-started)
@@ -114,6 +116,29 @@ $ pod update
     * Uses Bluetooth LE accessories, act as bluetooth-central. To scan in the background, the app need to listen for particular BLE service
     * Remote notifications
 
+* Dispatch
+  * [dispatch_async](https://developer.apple.com/documentation/dispatch/1453057-dispatch_async?language=objc), async, returns immediately
+  * dispatch_sync, do not call on the same queue
+  * [dispatch_get_main_queue](https://developer.apple.com/documentation/dispatch/1452921-dispatch_get_main_queue?language=objc)
+  * [dispatch_get_global_queue](https://developer.apple.com/documentation/dispatch/1452927-dispatch_get_global_queue?language=objc), high, default, low, background
+
+```objective-c
+    dispatch_async(dispatch_get_main_queue(), ^{
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    });
+```
+
+* NSOperationQueue
+  * [NSOperationQueue]()
+    * addOperation
+    * maxConcurrentOperationCount
+  * [NSBlockOperation](https://developer.apple.com/documentation/foundation/nsblockoperation?language=objc) / NSOperation
+    * cancel
+    * addDependency, removeDependency
+
+* dispatch_semaphore_t
+
 ## Drawing
 
 * [Apple, iOS Drawing Concepts](https://developer.apple.com/library/archive/documentation/2DDrawing/Conceptual/DrawingPrintingiOS/GraphicsDrawingOverview/GraphicsDrawingOverview.html)
@@ -124,15 +149,21 @@ $ pod update
   * [gloss](https://www.raywenderlich.com/2744-core-graphics-tutorial-glossy-buttons)
   * [pattern](https://www.raywenderlich.com/2742-core-graphics-tutorial-patterns)
   * [curve, layer](https://www.raywenderlich.com/2741-core-graphics-tutorial-curves-and-layers)
+* raywenderlich, Swift
+  * [part 1](https://www.raywenderlich.com/411-core-graphics-tutorial-part-1-getting-started)
+  * [part 2](https://www.raywenderlich.com/410-core-graphics-tutorial-part-2-gradients-and-contexts)
+  * [part 3](https://www.raywenderlich.com/409-core-graphics-tutorial-part-3-patterns-and-playgrounds)
 * gradient
   * [example, SO Thread](https://stackoverflow.com/questions/20632365/draw-gradient-along-a-curved-uibezierpath)
 
 ```objective-c
     CGGradientRef gradient = CGGradientCreateWithColorComponents(/* .. */)
-    CGContextDrawLinearGradient(context, gradient, /* .. */
+    CGContextDrawLinearGradient(context, gradient, /* .. */)
     CGGradientRelease(gradient);
     gradient = NULL;
 ```
+
+* CGContextSaveGState() and CGContextRestoreGState()
 
 ## WWDC Sessions
 

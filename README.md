@@ -19,23 +19,45 @@ This is my cheet sheet.
     * $ brew install
   * ex. mongodb, nvm, wget, ..
 
-## Code together
+## Other
 
-* Code together, ex. on-line interview
-* https://coderpad.io/
-* http://collabedit.com/
-* https://codeshare.io/
+* interview
+  * [LeetCode](http://leetcode.com/)
+* Code together
+  * https://coderpad.io/
+  * http://collabedit.com/
+  * https://codeshare.io/
+* Two's complement, ex. Eight-bit signed integers
+```c
+    0    = 0000 0000
+    1    = 0000 0001
+    127  = 0111 1111
+    -128 = 1000 0000
+    -127 = 1000 0001
+    -1   = 1111 1111
+```
+* shift operator
+```c
+    char a = 32;
+    char b = -32;
 
-## 64 bit
-
+    char c = a;
+    char d = b;
+    // c: 0x 20    d = 0x e0
+    c = a << 1;
+    d = b << 1;
+    // c: 0x 40    d = 0x c0
+    c = a >> 1;
+    d = b >> 1;
+    // c: 0x 10    d = 0x f0
+```
+* 64 bit
 | |ILP32|LP64 (ex. mac OS, iOS, Linux)|LLP64 (ex. Win)|
 |-|-|-|-|
 |pointer|32 bit|64 bit|64 bit|
 |int|32 bit|32 bit|32 bit|
 |long|32 bit|64 bit|32 bit|
 |long long|64 bit|64 bit|64 bit|
-
-other: ILP64, SILP64
 
 ## More
 * [Git](git.md)

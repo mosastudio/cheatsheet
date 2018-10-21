@@ -1,6 +1,8 @@
 ## iOS App
 
 ## Apple
+* [Apple Developer](https://developer.apple.com/)
+* [App Store Connect](https://appstoreconnect.apple.com/)
 * [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
 * [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/)
 * [iOS Data Storage Guidelines](https://developer.apple.com/icloud/documentation/data-storage/index.html)

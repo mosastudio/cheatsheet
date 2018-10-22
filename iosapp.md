@@ -15,6 +15,7 @@
 ## Other
 
 * [iOS Support Matrix, device, iOS version](http://iossupportmatrix.com/)
+* Spec of [iPhone](https://everymac.com/systems/apple/iphone/index-iphone-specs.html), [iPad](https://everymac.com/systems/apple/ipad/index-ipad-specs.html), [iPod](https://everymac.com/systems/apple/ipod/index-ipod-specs.html)
 * [iPhone Resolutions](https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions)
 
 | |bounds, scale|nativeBounds, nativeScale|

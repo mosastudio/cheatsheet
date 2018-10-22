@@ -102,7 +102,8 @@ $ pod update
     * [Custom UISlider](https://www.raywenderlich.com/2715-photoshop-tutorial-for-developers-creating-a-custom-uislider)
     * [Creating a Static Library](https://www.raywenderlich.com/2658-creating-a-static-library-in-ios-tutorial)
   * [NYTimes Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)
-
+  * [Swift, language guide](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+  
 * LaunchScreen.xib
   * O: UIImageView, UILabel, ..
   * X: custom subclass

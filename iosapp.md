@@ -53,6 +53,12 @@
   * quit iOS simulator
   * backup , and delete the files in ~/Library/Developer/Xcode/DerivedData/{YourAppName}-*/
 
+## Submitting app to App Store
+
+* [UDID](https://www.igeeksblog.com/how-to-find-iphone-udid-number/)
+* TestFlight, "Missing Compliance" for internal testing: [Ref.](https://stackoverflow.com/questions/35841117/missing-compliance-in-status-when-i-add-built-for-internal-testing-in-test-fligh) info.plist, <key>ITSAppUsesNonExemptEncryption</key><false/>
+* "“Invalid Bundle Structure - The binary file ‘xxxxxxxx.a’ is not permitted. Your app can’t contain standalone executables or libraries..." in Application Loader: the target setting => Build Phases => check "Copy Bundle Resources", the .a file or the folder, should not be listed.
+
 ## CocoaPods
 
 * [CocoaPods](https://cocoapods.org/), it is a dependency manager for ..
@@ -143,6 +149,30 @@ $ pod update
     * addDependency, removeDependency
 
 * dispatch_semaphore_t
+  * dispatch_semaphore_create(..)
+  * dispatch_semaphore_wait(.. , ..)
+  * dispatch_semaphore_signal(..)
+
+* Webpage debugging
+  * debug a webpage in the mac: Safari (Macbook) => Preferences => Advanced => "Show Developer menu in menu bar"
+  * debug a webpage in the iPhone (inc. Safari, and WKWebView in app): Setting (iPhone) => Safari => Advanced => "Web Inspector"
+  * check the log: Safari (Macbook) => Developer => the name of iPhone or Macbook
+
+* Enable JavaScript
+  * Enable it by iOS Conf.: Setting (iPhone) => Safari => Advanced => "JavaScript"
+  * Enable it bt code: WKPreferences.javaScriptEnabled
+
+* "Transport security has blocked a cleartest HTTP (http://) ....." => [Ref.](https://stackoverflow.com/questions/31254725/transport-security-has-blocked-a-cleartext-http)
+
+* Sorting
+
+```objective-c
+    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"-7.1", @"23", @"12", @"3.5", @"-11", nil];
+    [array sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        return ((fabs([obj1 doubleValue]) < fabs([obj2 doubleValue])) ? NSOrderedAscending : NSOrderedDescending);
+    }];
+    // 3.5    -7.1    -11    12    23
+```
 
 ## Drawing
 

@@ -174,6 +174,50 @@ $ pod update
     // 3.5    -7.1    -11    12    23
 ```
 
+* NSLog, [format specifiers](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/Articles/formatSpecifiers.html)
+
+| Specifier | type | Description |
+| - | - | - |
+| %% | | '%' |
+| %@ | Objective-C object | ex. NSString * ,  NSDictionary * , NSError *|
+| - | - | - |
+| %d | int | signed 32-bit integer |
+| %u | unsigned int | unsigned 32-bit integer |
+| %x | unsigned int | printed in hexadecimal |
+| %02x | unsigned char | for ex, print the bytes of NSData * |
+| %f | double | 64-bit floatinf-point number |
+| %c | unsigned char | 8-bit unsigned character |
+| %C | unichar | 16-bit UTF-16 code unit, NSString *, characterAtIndex: |
+| %s | | Null-terminated array of 8-bit unsigned characters. |
+| %p | void * | printed in hexadecimal, with a leading 0x. |
+| - | - | - |
+| l, ll | | length modifier |
+| %ld | long | |
+| %lu | unsigned long | |
+| %lld | long long | |
+| %llu | unsigned long long | |
+| - | - | - |
+| %f | CGFloat | |
+| %ld | (long)NSInteger | |
+| %lu | (unsigned long)NSUInteger | |
+| %zd | NSInteger | |
+| %tu | NSUInteger | |
+| - | - | - |
+| %1$d, %2$@ | - | positional specifier |
+
+```objective-c
+    int intValue = 1;
+    NSLog(@"%4d", intValue);       // "   1"
+    NSLog(@"%04d", intValue);      // "0001"
+    intValue = -1;
+    NSLog(@"%4d", intValue);       // "  -1"
+    NSLog(@"%04d", intValue);      // "-001"
+    double doubleValue = 30.037;
+    NSLog(@"%.2f", doubleValue);   // "30.04"
+    NSLog(@"%8.2f", doubleValue);  // "   30.04"
+    NSLog(@"%08.2f", doubleValue); // "00030.04"
+```
+
 ## Drawing
 
 * [Apple, iOS Drawing Concepts](https://developer.apple.com/library/archive/documentation/2DDrawing/Conceptual/DrawingPrintingiOS/GraphicsDrawingOverview/GraphicsDrawingOverview.html)

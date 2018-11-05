@@ -148,10 +148,31 @@ $ pod update
     * cancel
     * addDependency, removeDependency
 
+* @synchronized() {}
+
 * dispatch_semaphore_t
   * dispatch_semaphore_create(..)
   * dispatch_semaphore_wait(.. , ..)
   * dispatch_semaphore_signal(..)
+
+* retain cycles
+
+```objective-c
+// cycle
+    [obj theMethod:^{
+        [obj doSomething];
+    }];
+// using __weak
+    __weak typeof(self) weakSelf = self;
+    [self theMethod:^{
+        __strong typeof(self) strongSelf = weakSelf;
+        if (strongSelf) {
+            [strongSelf doSomething];
+        } else {
+            // ..
+        }
+    }];
+```
 
 * Webpage debugging
   * debug a webpage in the mac: Safari (Macbook) => Preferences => Advanced => "Show Developer menu in menu bar"
@@ -216,6 +237,18 @@ $ pod update
     NSLog(@"%.2f", doubleValue);   // "30.04"
     NSLog(@"%8.2f", doubleValue);  // "   30.04"
     NSLog(@"%08.2f", doubleValue); // "00030.04"
+```
+
+* init methods
+
+```objective-c
+- (id)init {
+    self = [super init];
+    if (self) {
+        // ....
+    }
+    return self;
+}
 ```
 
 ## Drawing

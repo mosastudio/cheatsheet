@@ -30,6 +30,9 @@
 * [Material icons, Google](https://material.io/tools/icons/)
 * [App Icon Maker](http://appiconmaker.co/)
 * [App Screenshot Maker](https://appinstitute.com/app-screenshot-maker/)
+* NSDateFormatter
+  * [full list](https://waracle.com/iphone-nsdateformatter-date-formatting-table/)
+  * [online editor](http://nsdateformatter.com)
 
 ## Xcode
 

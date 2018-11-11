@@ -59,8 +59,10 @@
 ## Submitting app to App Store
 
 * [UDID](https://www.igeeksblog.com/how-to-find-iphone-udid-number/)
-* TestFlight, "Missing Compliance" for internal testing: [Ref.](https://stackoverflow.com/questions/35841117/missing-compliance-in-status-when-i-add-built-for-internal-testing-in-test-fligh) info.plist, <key>ITSAppUsesNonExemptEncryption</key><false/>
-* "“Invalid Bundle Structure - The binary file ‘xxxxxxxx.a’ is not permitted. Your app can’t contain standalone executables or libraries..." in Application Loader: the target setting => Build Phases => check "Copy Bundle Resources", the .a file or the folder, should not be listed.
+* TestFlight, "Missing Compliance" for internal testing
+  * [Ref.](https://stackoverflow.com/questions/35841117/missing-compliance-in-status-when-i-add-built-for-internal-testing-in-test-fligh) info.plist, <key>ITSAppUsesNonExemptEncryption</key><false/>
+* "“Invalid Bundle Structure - The binary file ‘xxxxxxxx.a’ is not permitted. Your app can’t contain standalone executables or libraries..." in Application Loader
+  * the target setting => Build Phases => check "Copy Bundle Resources", the .a file or the folder, should not be listed.
 
 ## CocoaPods
 
@@ -100,35 +102,20 @@ $ pod update
 |Power Off| |(3) Volume Down + Power (Keep Pressing) |
 |Snapshot|Home + Power|Volume Up + Power|
 
-## Common
 
-* Tutorial
-  * [appcoda](http://www.appcoda.com/ios-programming-course/)
-    * Check the new API -> modify the sample code -> run it
-    * [Documenting](https://www.appcoda.com/documenting-source-code-in-xcode/)
-  * [KKBOX](https://legacy.gitbook.com/book/zonble/kkbox-ios-dev/details)
-  * [raywenderlich](https://www.raywenderlich.com/ios/)
-    * [Custom UISlider](https://www.raywenderlich.com/2715-photoshop-tutorial-for-developers-creating-a-custom-uislider)
-    * [Creating a Static Library](https://www.raywenderlich.com/2658-creating-a-static-library-in-ios-tutorial)
-  * [NYTimes Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)
-  * [Swift, language guide](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
-  
-* LaunchScreen.xib
-  * O: UIImageView, UILabel, ..
-  * X: custom subclass
-  * X: UIWebView
-  * ?: localization (not sure, there seems to be much limitation)
+## Tutorial
 
-* Background mode
-  * [Apple](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html)
-  * [raywenderlich](https://www.raywenderlich.com/5817-background-modes-tutorial-getting-started)
-  * (related) Finite-Length Tasks, UIBackgroundTaskIdentifier
-  * Xcode, Targets -> Capabilities -> Background Modes
-    * Audio
-    * Location updates
-    * External accessory communication, for MFi devices
-    * Uses Bluetooth LE accessories, act as bluetooth-central. To scan in the background, the app need to listen for particular BLE service
-    * Remote notifications
+* [appcoda](http://www.appcoda.com/ios-programming-course/)
+  * Check the new API -> modify the sample code -> run it
+  * [Documenting](https://www.appcoda.com/documenting-source-code-in-xcode/)
+* [KKBOX](https://legacy.gitbook.com/book/zonble/kkbox-ios-dev/details)
+* [raywenderlich](https://www.raywenderlich.com/ios/)
+  * [Custom UISlider](https://www.raywenderlich.com/2715-photoshop-tutorial-for-developers-creating-a-custom-uislider)
+  * [Creating a Static Library](https://www.raywenderlich.com/2658-creating-a-static-library-in-ios-tutorial)
+* [NYTimes Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)
+* [Swift, language guide](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+
+## Threading
 
 * Dispatch
   * [dispatch_async](https://developer.apple.com/documentation/dispatch/1453057-dispatch_async?language=objc), async, returns immediately
@@ -176,6 +163,25 @@ $ pod update
         }
     }];
 ```
+
+## Common
+
+* LaunchScreen.xib
+  * O: UIImageView, UILabel, ..
+  * X: custom subclass
+  * X: UIWebView
+  * ?: localization (not sure, there seems to be much limitation)
+
+* Background mode
+  * [Apple](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html)
+  * [raywenderlich](https://www.raywenderlich.com/5817-background-modes-tutorial-getting-started)
+  * (related) Finite-Length Tasks, UIBackgroundTaskIdentifier
+  * Xcode, Targets -> Capabilities -> Background Modes
+    * Audio
+    * Location updates
+    * External accessory communication, for MFi devices
+    * Uses Bluetooth LE accessories, act as bluetooth-central. To scan in the background, the app need to listen for particular BLE service
+    * Remote notifications
 
 * Webpage debugging
   * debug a webpage in the mac: Safari (Macbook) => Preferences => Advanced => "Show Developer menu in menu bar"

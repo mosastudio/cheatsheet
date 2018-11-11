@@ -30,6 +30,7 @@
 * [Material icons, Google](https://material.io/tools/icons/)
 * [App Icon Maker](http://appiconmaker.co/)
 * [App Screenshot Maker](https://appinstitute.com/app-screenshot-maker/)
+* [App Store Ranking](https://www.qimai.cn/rank/index/brand/all/genre/6013/device/iphone/country/us/date/2018-11-11)
 * NSDateFormatter
   * [full list](https://waracle.com/iphone-nsdateformatter-date-formatting-table/)
   * [online editor](http://nsdateformatter.com)
@@ -114,6 +115,8 @@ $ pod update
   * [Creating a Static Library](https://www.raywenderlich.com/2658-creating-a-static-library-in-ios-tutorial)
 * [NYTimes Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)
 * [Swift, language guide](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+* [Swift 2.2](https://itisjoe.gitbooks.io/swiftgo/content/)
+* [Online Swift Playground](http://online.swiftplayground.run)
 
 ## Threading
 

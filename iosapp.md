@@ -200,11 +200,50 @@ $ pod update
 * Sorting
 
 ```objective-c
-    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"-7.1", @"23", @"12", @"3.5", @"-11", nil];
-    [array sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
-        return ((fabs([obj1 doubleValue]) < fabs([obj2 doubleValue])) ? NSOrderedAscending : NSOrderedDescending);
-    }];
-    // 3.5    -7.1    -11    12    23
+NSMutableArray *array = [NSMutableArray arrayWithObjects:@"-7.1", @"23", @"12", @"3.5", @"-11", nil];
+[array sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+    return ((fabs([obj1 doubleValue]) < fabs([obj2 doubleValue])) ? NSOrderedAscending : NSOrderedDescending);
+}];
+// 3.5    -7.1    -11    12    23
+```
+
+```Swift
+let array = [-7.1, 23, 12, 3.5, -11]
+
+// write a normal function of the correct type
+func sortCustom(_ v1: Double, _ v2: Double) -> Bool {
+    return abs(v1) < abs(v2)
+}
+var sorted1 = array.sorted(by: sortCustom)
+
+// Closure Expression Syntax
+var sorted2 = array.sorted(by: { (v1: Double, v2: Double) -> Bool in
+    return abs(v1) < abs(v2)
+})
+// written on a single line
+// var sorted2 = array.sorted(by: { (v1: Double, v2: Double) -> Bool in return abs(v1) < abs(v2) })
+
+// Inferring Type From Context
+var sorted3 = array.sorted(by: { v1, v2 in
+    return abs(v1) < abs(v2)
+})
+// written on a single line
+// var sorted3 = array.sorted(by: { v1, v2 in return abs(v1) < abs(v2) })
+
+// Implicit Returns from Single-Expression Closures
+var sorted4 = array.sorted(by: { v1, v2 in
+    abs(v1) < abs(v2)
+})
+// written on a single line
+// var sorted4 = array.sorted(by: { v1, v2 in abs(v1) < abs(v2) })
+
+// Shorthand Argument Names
+var sorted5 = array.sorted(by: { abs($0) < abs($1) })
+
+var sorted6 = array.sorted(by: < )
+
+// sorted1, sorted2, sorted3, sorted4, sorted5: [3.5, -7.1, -11, 12, 23]
+// sorted6: [-11, -7.1, 3.5, 12, 23]
 ```
 
 * NSLog, [format specifiers](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/Articles/formatSpecifiers.html)

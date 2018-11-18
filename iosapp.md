@@ -305,6 +305,9 @@ var sorted6 = array.sorted(by: < )
 }
 ```
 
+* animation, using UIViewPropertyAnimator
+  * [Ref](https://medium.com/@daniel_larsson/interactive-animations-with-uiviewpropertyanimator-284580951c62)
+
 ## Drawing
 
 * [Apple, iOS Drawing Concepts](https://developer.apple.com/library/archive/documentation/2DDrawing/Conceptual/DrawingPrintingiOS/GraphicsDrawingOverview/GraphicsDrawingOverview.html)

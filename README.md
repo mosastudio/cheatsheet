@@ -9,6 +9,9 @@ This is my cheet sheet.
   * [Console](https://console.firebase.google.com/)
   * [Privacy Policy Generator](https://app-privacy-policy-generator.firebaseapp.com/)
   * AdMob
+  * "Upload missing dSYMs to see crashes from 1 versions", if failed to upload dSYM automatically
+    * go to "App Store Connect" -> theApp > Activity > theBuildNumber > Download dSYM
+    * Firebase console, upload it
 * Facebook
   * [Developers](https://developers.facebook.com/)
   * [Facebook Audience Network](https://developers.facebook.com/docs/audience-network/)

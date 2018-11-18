@@ -169,6 +169,9 @@ $ pod update
 
 ## Common
 
+* preprocessor
+  * Objective-C: "Preprocessor Macros"
+  * Swift: "Active Compilation Conditions"
 * LaunchScreen.xib
   * O: UIImageView, UILabel, ..
   * X: custom subclass
@@ -327,6 +330,20 @@ var sorted6 = array.sorted(by: < )
 ```
 
 * CGContextSaveGState() and CGContextRestoreGState()
+
+## Audio
+
+* WWDC, [2014, Session 501](https://developer.apple.com/videos/play/wwdc2014/501/)
+* WWDC, [2014, Session 502](https://developer.apple.com/videos/play/wwdc2014/502/)
+* [Categories](https://developer.apple.com/documentation/avfoundation/avaudiosessioncategory?language=objc)
+* [Modes](https://developer.apple.com/documentation/avfoundation/avaudiosession/audio_session_modes?language=objc)
+* [Categories and Modes](https://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/AudioSessionCategoriesandModes/AudioSessionCategoriesandModes.html#//apple_ref/doc/uid/TP40007875-CH10-SW1)
+* Tutorial, [AVAudioEngine](https://www.raywenderlich.com/5154-avaudioengine-tutorial-for-ios-getting-started)
+* Tutorial, [Speech Recognition](https://www.raywenderlich.com/573-speech-recognition-tutorial-for-ios)
+* Tutorial, [AVAudioEngine](https://cms.35g.tw/coding/avaudioengine完成即時錄音與播放功能/)
+* Sample code, [Speech Recognition](https://developer.apple.com/library/archive/samplecode/SpeakToMe/Introduction/Intro.html#//apple_ref/doc/uid/TP40017110)
+* SO, [format](https://stackoverflow.com/questions/33484140/how-can-i-specify-the-format-of-avaudioengine-mic-input)
+* SO, [AVAudioFIle](https://stackoverflow.com/questions/52111483/writing-avaudiopcmbuffer-into-an-avaudiofile-compressed)
 
 ## WWDC Sessions
 

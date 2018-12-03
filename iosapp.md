@@ -59,7 +59,9 @@
 
 ## Submitting app to App Store
 
-* [UDID](https://www.igeeksblog.com/how-to-find-iphone-udid-number/)
+* UDID
+  * [iTunes](https://www.igeeksblog.com/how-to-find-iphone-udid-number/)
+  * [Xcode](https://www.idownloadblog.com/2018/11/20/how-to-find-udid-iphone-xs-max-xr/)
 * TestFlight, "Missing Compliance" for internal testing
   * [Ref.](https://stackoverflow.com/questions/35841117/missing-compliance-in-status-when-i-add-built-for-internal-testing-in-test-fligh) info.plist, <key>ITSAppUsesNonExemptEncryption</key><false/>
 * "“Invalid Bundle Structure - The binary file ‘xxxxxxxx.a’ is not permitted. Your app can’t contain standalone executables or libraries..." in Application Loader

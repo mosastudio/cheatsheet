@@ -66,6 +66,7 @@
   * [Ref.](https://stackoverflow.com/questions/35841117/missing-compliance-in-status-when-i-add-built-for-internal-testing-in-test-fligh) info.plist, <key>ITSAppUsesNonExemptEncryption</key><false/>
 * "“Invalid Bundle Structure - The binary file ‘xxxxxxxx.a’ is not permitted. Your app can’t contain standalone executables or libraries..." in Application Loader
   * the target setting => Build Phases => check "Copy Bundle Resources", the .a file or the folder, should not be listed.
+* [App Center](https://appcenter.ms/apps)
 
 ## CocoaPods
 

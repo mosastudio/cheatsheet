@@ -337,6 +337,8 @@ var sorted6 = array.sorted(by: < )
 
 * CGContextSaveGState() and CGContextRestoreGState()
 
+* [Bezier Path, Shape Layer](https://www.appcoda.com/bezier-paths-introduction/)
+
 ## Audio
 
 * WWDC, [2014, Session 501](https://developer.apple.com/videos/play/wwdc2014/501/)

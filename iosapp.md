@@ -119,6 +119,8 @@ $ pod update
   * {5.}
     * "所以我們要注意，viewDidLoad 並不是 UIViewController 的 Initializer，—雖然我們在開始使用某個 view controller 的時候，一定會呼叫到一次viewDidLoad ，我們也通常會在這個地方，做一些初始化這個 view controller的事情—但 viewDidLoad 是有機會在 View Controller 的 Life Cycle 中被重複呼叫好幾遍—在建立了 view 之後，view 也可以再次指向 nil，所以 view controller 可能會被重複釋放與載入 view， viewDidLoad也會被重複呼叫。"
     * "view controller 被放到最上層時，會被呼叫到 viewWillAppear: 以及 viewDidAppear: ，離開最上層時，會呼叫 viewWillDisappear: 與 viewDidDisappear:"
+  * {12}
+
 * [raywenderlich](https://www.raywenderlich.com/ios/)
   * [Custom UISlider](https://www.raywenderlich.com/2715-photoshop-tutorial-for-developers-creating-a-custom-uislider)
   * [Creating a Static Library](https://www.raywenderlich.com/2658-creating-a-static-library-in-ios-tutorial)
@@ -208,6 +210,48 @@ $ pod update
   * Enable it bt code: WKPreferences.javaScriptEnabled
 
 * "Transport security has blocked a cleartest HTTP (http://) ....." => [Ref.](https://stackoverflow.com/questions/31254725/transport-security-has-blocked-a-cleartext-http)
+
+```objective-c
+@interface UIViewController : UIResponder
+@end
+
+@interface UIResponder : NSObject
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
+@end
+
+@interface UIControl : UIView
+- (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event;
+- (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event;
+- (void)endTrackingWithTouch:(nullable UITouch *)touch withEvent:(nullable UIEvent *)event;
+- (void)cancelTrackingWithEvent:(nullable UIEvent *)event;
+
+- (void)addTarget:(nullable id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
+@end
+
+@interface UIView : UIResponder
+@property(nonatomic,getter=isExclusiveTouch) BOOL       exclusiveTouch __TVOS_PROHIBITED;
+@end
+
+typedef NS_OPTIONS(NSUInteger, UIControlEvents) {
+    UIControlEventTouchDown                                         = 1 <<  0,      // on all touch downs
+    UIControlEventTouchUpInside                                     = 1 <<  6,
+    UIControlEventTouchUpOutside                                    = 1 <<  7,
+
+    UIControlEventValueChanged                                      = 1 << 12,     // sliders, etc.
+
+    UIControlEventAllEvents                                         = 0xFFFFFFFF
+};
+
+@interface UILabel : UIView
+@end
+@interface UITextField : UIControl <UITextInput>
+@end
+@interface UITextView : UIScrollView <UITextInput>
+@end
+```
 
 * Sorting
 

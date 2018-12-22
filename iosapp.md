@@ -211,8 +211,17 @@ $ pod update
 
 * "Transport security has blocked a cleartest HTTP (http://) ....." => [Ref.](https://stackoverflow.com/questions/31254725/transport-security-has-blocked-a-cleartext-http)
 
+* UIViewController, UIControl, UIView, UIResponder
+
 ```objective-c
 @interface UIViewController : UIResponder
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
+- (void)viewWillLayoutSubviews;
+- (void)viewDidLayoutSubviews;
 @end
 
 @interface UIResponder : NSObject

@@ -180,6 +180,7 @@ $ pod update
 
 ## Extensions
 
+* [Limitations of custom iOS keyboards](https://medium.com/@inFullMobile/limitations-of-custom-ios-keyboards-3be88dfb694)
 * [Shared User Defaults](https://medium.com/ios-os-x-development/shared-user-defaults-in-ios-3f15cd2c9409)
 
 ## Common

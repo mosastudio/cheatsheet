@@ -178,6 +178,10 @@ $ pod update
     }];
 ```
 
+## Extensions
+
+* [Shared User Defaults](https://medium.com/ios-os-x-development/shared-user-defaults-in-ios-3f15cd2c9409)
+
 ## Common
 
 * preprocessor

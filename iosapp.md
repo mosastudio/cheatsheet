@@ -180,8 +180,7 @@ $ pod update
 
 ## HTTP
 
-* ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?language=objc
-  * scheme://host:port/path?query
+ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?language=objc
 
 |def.|value|
 |-|-|

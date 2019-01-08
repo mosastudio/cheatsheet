@@ -178,6 +178,40 @@ $ pod update
     }];
 ```
 
+## HTTP
+
+ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?language=objc
+
+|def.|value|
+|-|-|
+|scheme|https|
+|host|developer.apple.com|
+|port|443|
+|path|/documentation/uikit/uiviewcontroller|
+|pathExtension|-|
+|query|language=objc|
+
+* request, client -> server
+  * [method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods), headers (inc. token, Content-Type), body
+
+|method|usage|
+|-|-|
+|POST|Create|
+|GET|Read|
+|PUT|Update|
+|DELETE|Delete|
+
+* response, server -> client
+  * [status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), headers (inc. Content-Type, Content-Length), body
+
+|status code|def.|
+|-|-|
+|1xx|Information|
+|2xx|Success. 200: OK, 201: Created, 202: Accepted, ..|
+|3xx|Redirection|
+|4xx|Client error. 400: Bad Request, 404: Not Found, ..|
+|5xx|Server error. 500: Internal Server Error, ..|
+
 ## Extensions
 
 * [Limitations of custom iOS keyboards](https://medium.com/@inFullMobile/limitations-of-custom-ios-keyboards-3be88dfb694)

@@ -180,7 +180,8 @@ $ pod update
 
 ## HTTP
 
-ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?language=objc
+* ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?language=objc
+  * scheme://host:port/path?query
 
 |def.|value|
 |-|-|
@@ -188,7 +189,6 @@ ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?languag
 |host|developer.apple.com|
 |port|443|
 |path|/documentation/uikit/uiviewcontroller|
-|pathExtension|-|
 |query|language=objc|
 
 * request, client -> server
@@ -200,6 +200,7 @@ ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?languag
 |GET|Read|
 |PUT|Update|
 |DELETE|Delete|
+|HEAD|Read, but no response body|
 
 * response, server -> client
   * [status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), headers (inc. Content-Type, Content-Length), body

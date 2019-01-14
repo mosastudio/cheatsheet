@@ -81,6 +81,17 @@ This is my cheet sheet.
 |long|32 bit|64 bit|32 bit|
 |long long|64 bit|64 bit|64 bit|
 
+* Endianness
+
+int32_t	longVar	= 0x0a0b0c0d;
+
+| memory at offset | Big-Endian | Little-Endian |
+|-|-|-|
+| +0 | 0a | 0d |
+| +1 | 0b | 0c |
+| +2 | 0c | 0b |
+| +3 | 0d | 0a |
+
 ## More
 * [Git](git.md)
 * [iOS App](iosapp.md)

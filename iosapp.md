@@ -226,6 +226,17 @@ ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?languag
 * [Limitations of custom iOS keyboards](https://medium.com/@inFullMobile/limitations-of-custom-ios-keyboards-3be88dfb694)
 * [Shared User Defaults](https://medium.com/ios-os-x-development/shared-user-defaults-in-ios-3f15cd2c9409)
 
+## Localization
+
+* [Tutorial](https://www.raywenderlich.com/250-internationalizing-your-ios-app-getting-started)
+* .lproj
+  * Base.lproj
+  * zh-hans.lproj
+  * zh-hant.lproj
+* .strings
+  * Localizable.strings
+  * InfoPlist.strings
+
 ## Common
 
 * preprocessor

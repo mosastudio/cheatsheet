@@ -212,6 +212,15 @@ ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?languag
 |4xx|Client error. 400: Bad Request, 404: Not Found, ..|
 |5xx|Server error. 500: Internal Server Error, ..|
 
+* [NSURLSession tutorial](https://www.raywenderlich.com/567-urlsession-tutorial-getting-started)
+  * NSURLRequest
+  * NSURLSessionTask
+    * NSURLSessionDataTask
+      * NSURLSessionUploadTask
+    * NSURLSessionDownloadTask
+
+* Stop isong NSURLConnection
+
 ## Extensions
 
 * [Limitations of custom iOS keyboards](https://medium.com/@inFullMobile/limitations-of-custom-ios-keyboards-3be88dfb694)

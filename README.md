@@ -72,6 +72,15 @@ This is my cheet sheet.
     // c: 0001 0000    d = 1111 0000
 ```
 
+* Other bitwise operators
+
+```c
+    ~a       // bitwise NOT
+    a & b    // bitwise AND
+    a | b    // bitwise OR
+    a ^ b    // bitwise XOR
+```
+
 * 64 bit
 
 | |ILP32|LP64 (ex. mac OS, iOS, Linux)|LLP64 (ex. Win)|

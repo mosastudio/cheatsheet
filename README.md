@@ -101,6 +101,17 @@ int32_t	longVar	= 0x0a0b0c0d;
 | +2 | 0c | 0b |
 | +3 | 0d | 0a |
 
+* const
+
+[Hint: Read it backwards](https://stackoverflow.com/questions/1143262/what-is-the-difference-between-const-int-const-int-const-and-int-const)
+
+| example | def. | equal to |
+|-|-|-|
+| int * | pointer to int | |
+| int const * | pointer to const int | const int * |
+| int * const | const pointer to int | |
+| int const * const | const pointer to const int | const int * const |
+
 ## More
 * [Git](git.md)
 * [iOS App](iosapp.md)

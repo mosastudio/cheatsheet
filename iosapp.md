@@ -178,7 +178,7 @@ $ pod update
     }];
 ```
 
-## HTTP
+## HTTP, RESTful API
 
 ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?language=objc
 
@@ -219,20 +219,29 @@ ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?languag
       * NSURLSessionUploadTask
     * NSURLSessionDownloadTask
 
-* Stop isong NSURLConnection
+* Stop using NSURLConnection
 
-## Web, WebView
+* [JSON Serialization](https://developer.apple.com/swift/blog/?id=37)
+
+## Webpage, WebView
 
 * Webpage debugging
   * debug a webpage in the mac: Safari (Macbook) => Preferences => Advanced => "Show Developer menu in menu bar"
   * debug a webpage in the iPhone (inc. Safari, and WKWebView in app): Setting (iPhone) => Safari => Advanced => "Web Inspector"
   * check the log: Safari (Macbook) => Developer => the name of iPhone or Macbook
 
+* "Transport security has blocked a cleartest HTTP (http://) ....." => [Ref.](https://stackoverflow.com/questions/31254725/transport-security-has-blocked-a-cleartext-http)
+
 * Enable JavaScript
   * Enable it by iOS Conf.: Setting (iPhone) => Safari => Advanced => "JavaScript"
   * Enable it bt code: WKPreferences.javaScriptEnabled
 
-* "Transport security has blocked a cleartest HTTP (http://) ....." => [Ref.](https://stackoverflow.com/questions/31254725/transport-security-has-blocked-a-cleartext-http)
+* Disable zoom in WKWebView
+  * [Ref](https://stackoverflow.com/questions/40452034/disable-zoom-in-wkwebview/41741125)
+
+## Keyboard
+
+* [Ref](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html)
 
 ## UIKit
 

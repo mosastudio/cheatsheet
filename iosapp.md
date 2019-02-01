@@ -221,43 +221,7 @@ ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?languag
 
 * Stop isong NSURLConnection
 
-## Extensions
-
-* [Limitations of custom iOS keyboards](https://medium.com/@inFullMobile/limitations-of-custom-ios-keyboards-3be88dfb694)
-* [Shared User Defaults](https://medium.com/ios-os-x-development/shared-user-defaults-in-ios-3f15cd2c9409)
-
-## Localization
-
-* [Tutorial](https://www.raywenderlich.com/250-internationalizing-your-ios-app-getting-started)
-* .lproj
-  * Base.lproj
-  * zh-hans.lproj
-  * zh-hant.lproj
-* .strings
-  * Localizable.strings
-  * InfoPlist.strings
-
-## Common
-
-* preprocessor
-  * Objective-C: "Preprocessor Macros"
-  * Swift: "Active Compilation Conditions"
-* LaunchScreen.xib
-  * O: UIImageView, UILabel, ..
-  * X: custom subclass
-  * X: UIWebView
-  * ?: localization (not sure, there seems to be much limitation)
-
-* Background mode
-  * [Apple](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html)
-  * [raywenderlich](https://www.raywenderlich.com/5817-background-modes-tutorial-getting-started)
-  * (related) Finite-Length Tasks, UIBackgroundTaskIdentifier
-  * Xcode, Targets -> Capabilities -> Background Modes
-    * Audio
-    * Location updates
-    * External accessory communication, for MFi devices
-    * Uses Bluetooth LE accessories, act as bluetooth-central. To scan in the background, the app need to listen for particular BLE service
-    * Remote notifications
+## Web, WebView
 
 * Webpage debugging
   * debug a webpage in the mac: Safari (Macbook) => Preferences => Advanced => "Show Developer menu in menu bar"
@@ -270,7 +234,7 @@ ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?languag
 
 * "Transport security has blocked a cleartest HTTP (http://) ....." => [Ref.](https://stackoverflow.com/questions/31254725/transport-security-has-blocked-a-cleartext-http)
 
-* UIViewController, UIControl, UIView, UIResponder
+## UIKit
 
 ```objective-c
 @interface UIViewController : UIResponder
@@ -320,6 +284,44 @@ typedef NS_OPTIONS(NSUInteger, UIControlEvents) {
 @interface UITextView : UIScrollView <UITextInput>
 @end
 ```
+
+## Extensions
+
+* [Limitations of custom iOS keyboards](https://medium.com/@inFullMobile/limitations-of-custom-ios-keyboards-3be88dfb694)
+* [Shared User Defaults](https://medium.com/ios-os-x-development/shared-user-defaults-in-ios-3f15cd2c9409)
+
+## Localization
+
+* [Tutorial](https://www.raywenderlich.com/250-internationalizing-your-ios-app-getting-started)
+* .lproj
+  * Base.lproj
+  * zh-hans.lproj
+  * zh-hant.lproj
+* .strings
+  * Localizable.strings
+  * InfoPlist.strings
+
+## Common
+
+* preprocessor
+  * Objective-C: "Preprocessor Macros"
+  * Swift: "Active Compilation Conditions"
+* LaunchScreen.xib
+  * O: UIImageView, UILabel, ..
+  * X: custom subclass
+  * X: UIWebView
+  * ?: localization (not sure, there seems to be much limitation)
+
+* Background mode
+  * [Apple](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html)
+  * [raywenderlich](https://www.raywenderlich.com/5817-background-modes-tutorial-getting-started)
+  * (related) Finite-Length Tasks, UIBackgroundTaskIdentifier
+  * Xcode, Targets -> Capabilities -> Background Modes
+    * Audio
+    * Location updates
+    * External accessory communication, for MFi devices
+    * Uses Bluetooth LE accessories, act as bluetooth-central. To scan in the background, the app need to listen for particular BLE service
+    * Remote notifications
 
 * Sorting
 

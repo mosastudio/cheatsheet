@@ -109,8 +109,8 @@ $ pod update
 
 ## Tutorial
 
-* [appcoda](http://www.appcoda.com/ios-programming-course/)
-  * Check the new API -> modify the sample code -> run it
+* appcoda
+  * [Learn iOS Programming](http://www.appcoda.com/ios-programming-course/) Check the new API -> modify the sample code -> run it
   * [Documenting](https://www.appcoda.com/documenting-source-code-in-xcode/)
 * [KKBOX](https://legacy.gitbook.com/book/zonble/kkbox-ios-dev/details)
   * in ARC, retain, release, autorelease, retainCount is forbidden
@@ -120,6 +120,7 @@ $ pod update
     * "所以我們要注意，viewDidLoad 並不是 UIViewController 的 Initializer，—雖然我們在開始使用某個 view controller 的時候，一定會呼叫到一次viewDidLoad ，我們也通常會在這個地方，做一些初始化這個 view controller的事情—但 viewDidLoad 是有機會在 View Controller 的 Life Cycle 中被重複呼叫好幾遍—在建立了 view 之後，view 也可以再次指向 nil，所以 view controller 可能會被重複釋放與載入 view， viewDidLoad也會被重複呼叫。"
     * "view controller 被放到最上層時，會被呼叫到 viewWillAppear: 以及 viewDidAppear: ，離開最上層時，會呼叫 viewWillDisappear: 與 viewDidDisappear:"
   * {12}
+* [The University of Chicago](http://uchicago.mobi/sessions/) Swift
 
 * [raywenderlich](https://www.raywenderlich.com/ios/)
   * [Custom UISlider](https://www.raywenderlich.com/2715-photoshop-tutorial-for-developers-creating-a-custom-uislider)

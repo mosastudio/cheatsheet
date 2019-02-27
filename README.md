@@ -26,6 +26,8 @@ This is my cheet sheet.
 * Font
   * [IDEO fontmap](http://fontmap.ideo.com)
   * [Google Fonts](https://fonts.google.com)
+* Color
+  * [name that color](http://chir.ag/projects/name-that-color/)
 
 ## Mac OS
 

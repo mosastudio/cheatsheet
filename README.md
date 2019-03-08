@@ -1,6 +1,6 @@
 ## Cheat Sheet
 
-This is my cheet sheet.
+This is my cheat sheet.
 
 ## Programming
 

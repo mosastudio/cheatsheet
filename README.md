@@ -2,6 +2,12 @@
 
 This is my cheat sheet.
 
+## In detail
+
+* [Git](git.md)
+* [iOS App](iosapp.md)
+* [JavaScript](javascript.md)
+
 ## Programming
 
 * Firebase
@@ -116,8 +122,3 @@ int32_t	longVar	= 0x0a0b0c0d;
 | int const * | pointer to const int | const int * |
 | int * const | const pointer to int | |
 | int const * const | const pointer to const int | const int * const |
-
-## More
-* [Git](git.md)
-* [iOS App](iosapp.md)
-* [JavaScript](javascript.md)

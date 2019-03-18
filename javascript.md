@@ -157,17 +157,21 @@ parseFloat(string)
 |localeCompare(compareString)|result of "abb".localeCompare("baa”); is -1|
 
 ```js
-function countSubString(string) {
-  array = string.split(" ");
-  console.log(array.length);
+function printSubString(string) {
+  let array = string.split(" ");
+  console.log(array.length + "    " + JSON.stringify(array))
 }
 
-countSubString(" ");    // 2
-countSubString("  ");   // 3
-countSubString("1");    // 1
-countSubString(" 1");   // 2
-countSubString("1 ");   // 2
-countSubString(" 1 ");  // 3
+printSubString(" ");    // 2    ["",""]
+printSubString("  ");   // 3    ["","",""]
+printSubString("1");    // 1    ["1"]
+printSubString("1 ");   // 2    ["1",""]
+printSubString(" 1");   // 2    ["","1"]
+printSubString("1  ");  // 3    ["1","",""]
+printSubString(" 1 ");  // 3    ["","1",""]
+printSubString("  1");  // 3    ["","","1"]
+printSubString("1 a");  // 2    ["1","a"]
+printSubString("1 a "); // 3    ["1","a",""]
 ```
 
 ## Promise

@@ -1,3 +1,9 @@
+## Reference
+
+* [MDN, JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+* [w3schools, JavaScript Tutorial](https://www.w3schools.com/js/)
+* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+
 ## JavaScript
 
 * JavaScript is compatible with ECMAScript, and it provides additional features. [Wiki](https://en.wikipedia.org/wiki/ECMAScript)
@@ -45,11 +51,6 @@ $ nvm alias default v8.9.3
 $ npm install
 $ npm update
 ```
-
-## Reference
-
-* [w3schools, JavaScript Tutorial](https://www.w3schools.com/js/)
-* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 
 ## JavaScript
 
@@ -108,6 +109,8 @@ parseFloat(string)
 
 |property/method|description|
 |-|-|
+|push|add one or more element to the end|
+|pop|remove the last element|
 |length|the number of elements||
 |filter()|create a new array, pass a test|
 |reverse()|reverse the order|

@@ -3,14 +3,16 @@
 ## Apple
 * [Apple Developer](https://developer.apple.com/)
 * [App Store Connect](https://appstoreconnect.apple.com/)
-* [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
-* [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/)
-* [iOS Data Storage Guidelines](https://developer.apple.com/icloud/documentation/data-storage/index.html)
+* Guidelines
+  * [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
+  * [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/)
+  * [iOS Data Storage Guidelines](https://developer.apple.com/icloud/documentation/data-storage/index.html)
 * [OS Percentage](https://developer.apple.com/support/app-store/)
-  * iOS 12 - 50%, iOS 11 - 39%, earlier - 11% (Oct. 10 2018)
+  * iOS 12 - 80%, iOS 11 - 12%, earlier - 8% (Feb. 24, 2019)
 * [Device Compatibility](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/DeviceCompatibilityMatrix/DeviceCompatibilityMatrix.html)
-* [Download](https://developer.apple.com/download/)
-* [More Downloads](https://developer.apple.com/download/more/)
+* Download
+  * [Download](https://developer.apple.com/download/)
+  * [More Downloads](https://developer.apple.com/download/more/)
 
 ## Other
 
@@ -31,9 +33,6 @@
 * [App Icon Maker](http://appiconmaker.co/)
 * [App Screenshot Maker](https://appinstitute.com/app-screenshot-maker/)
 * [App Store Ranking](https://www.qimai.cn/rank/index/brand/all/genre/6013/device/iphone/country/us/date/2018-11-11)
-* NSDateFormatter
-  * [full list](https://waracle.com/iphone-nsdateformatter-date-formatting-table/)
-  * [online editor](http://nsdateformatter.com)
 
 ## Xcode
 
@@ -295,6 +294,17 @@ typedef NS_OPTIONS(NSUInteger, UIControlEvents) {
 @end
 ```
 
+* Custom UIAlertController
+  * [UIAlertController class ref.](https://developer.apple.com/documentation/uikit/uialertcontroller#//apple_ref/doc/uid/TP40014538-CH1-SW2), The UIAlertController class is intended to be used as-is and does not support subclassing. The view hierarchy for this class is private and must not be modified.
+  * [HUD, MBProgressHUD](https://github.com/jdg/MBProgressHUD)
+  * [HUD, SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)
+  * [SCLAlertView, Swift](https://github.com/vikmeup/SCLAlertView-Swift)
+  * [SCLAlertView, ObjC](https://github.com/dogo/SCLAlertView)
+  * [SDCAlertView](https://github.com/sberrevoets/SDCAlertView)
+  * [PopupDialog](https://github.com/orderella/PopupDialog)  
+  * [PMAlertController](https://github.com/pmusolino/PMAlertController)
+  * [SwiftMessages](https://github.com/SwiftKickMobile/SwiftMessages)
+
 ## Extensions
 
 * [Limitations of custom iOS keyboards](https://medium.com/@inFullMobile/limitations-of-custom-ios-keyboards-3be88dfb694)
@@ -425,6 +435,10 @@ var sorted6 = array.sorted(by: < )
     NSLog(@"%8.2f", doubleValue);  // "   30.04"
     NSLog(@"%08.2f", doubleValue); // "00030.04"
 ```
+
+* NSDateFormatter
+  * [full list](https://waracle.com/iphone-nsdateformatter-date-formatting-table/)
+  * [online editor](http://nsdateformatter.com)
 
 * init methods
 

@@ -1,6 +1,10 @@
-## iOS App
+## In detail
 
-## Apple
+* [Swift Standard Library](ios_swift_basic.md)
+  * Int, Double, String, Array, Dictionary, Set, ..
+* [Thread](ios_thread.md)
+
+## Apple, links
 * [Apple Developer](https://developer.apple.com/)
 * [App Store Connect](https://appstoreconnect.apple.com/)
 * Guidelines
@@ -14,7 +18,7 @@
   * [Download](https://developer.apple.com/download/)
   * [More Downloads](https://developer.apple.com/download/more/)
 
-## Other
+## Other, links
 
 * [iOS Support Matrix, device, iOS version](http://iossupportmatrix.com/)
 * Spec of [iPhone](https://everymac.com/systems/apple/iphone/index-iphone-specs.html), [iPad](https://everymac.com/systems/apple/ipad/index-ipad-specs.html), [iPod](https://everymac.com/systems/apple/ipod/index-ipod-specs.html)
@@ -105,7 +109,6 @@ $ pod update
 |Power Off| |(3) Volume Down + Power (Keep Pressing) |
 |Snapshot|Home + Power|Volume Up + Power|
 
-
 ## Tutorial
 
 * appcoda
@@ -128,55 +131,6 @@ $ pod update
 * [Swift, language guide](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
 * [Swift 2.2](https://itisjoe.gitbooks.io/swiftgo/content/)
 * [Online Swift Playground](http://online.swiftplayground.run)
-
-## Threading
-
-* Dispatch
-  * [dispatch_async](https://developer.apple.com/documentation/dispatch/1453057-dispatch_async?language=objc), async, returns immediately
-  * dispatch_sync, do not call on the same queue
-  * [dispatch_get_main_queue](https://developer.apple.com/documentation/dispatch/1452921-dispatch_get_main_queue?language=objc)
-  * [dispatch_get_global_queue](https://developer.apple.com/documentation/dispatch/1452927-dispatch_get_global_queue?language=objc), high, default, low, background
-
-```objective-c
-    dispatch_async(dispatch_get_main_queue(), ^{
-    });
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    });
-```
-
-* NSOperationQueue
-  * [NSOperationQueue]()
-    * addOperation
-    * maxConcurrentOperationCount
-  * [NSBlockOperation](https://developer.apple.com/documentation/foundation/nsblockoperation?language=objc) / NSOperation
-    * cancel
-    * addDependency, removeDependency
-
-* @synchronized() {}
-
-* dispatch_semaphore_t
-  * dispatch_semaphore_create(..)
-  * dispatch_semaphore_wait(.. , ..)
-  * dispatch_semaphore_signal(..)
-
-* retain cycles
-
-```objective-c
-// cycle
-    [obj theMethod:^{
-        [obj doSomething];
-    }];
-// using __weak
-    __weak typeof(self) weakSelf = self;
-    [self theMethod:^{
-        __strong typeof(self) strongSelf = weakSelf;
-        if (strongSelf) {
-            [strongSelf doSomething];
-        } else {
-            // ..
-        }
-    }];
-```
 
 ## HTTP, RESTful API
 

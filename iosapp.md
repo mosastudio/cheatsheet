@@ -2,6 +2,7 @@
 
 * [Swift Standard Library](ios_swift_basic.md)
   * Int, Double, String, Array, Dictionary, Set, ..
+* [init](ios_init.md)
 * [Thread](ios_thread.md)
 
 ## Apple, links
@@ -393,18 +394,6 @@ var sorted6 = array.sorted(by: < )
 * NSDateFormatter
   * [full list](https://waracle.com/iphone-nsdateformatter-date-formatting-table/)
   * [online editor](http://nsdateformatter.com)
-
-* init methods
-
-```objective-c
-- (id)init {
-    self = [super init];
-    if (self) {
-        // ....
-    }
-    return self;
-}
-```
 
 * animation, using UIViewPropertyAnimator
   * [Ref](https://medium.com/@daniel_larsson/interactive-animations-with-uiviewpropertyanimator-284580951c62)

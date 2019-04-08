@@ -27,10 +27,12 @@ This is my cheat sheet.
 * View, Convert
   * [browserling, conversion, encrypt, decrypt, ..](https://www.browserling.com/tools/)
   * [Epoch & Unix Timestamp Conversion Tools](https://www.epochconverter.com/)
-  * [Jeffrey's Image Metadata Viewer](http://exif.regex.info/exif.cgi)
   * [JSON to CSV](https://json-csv.com/)
   * [Audio Converter](https://online-audio-converter.com/tw/)
 * [TCP and UDP port numbers](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
+* Image
+  * [Jeffrey's Image Metadata Viewer](http://exif.regex.info/exif.cgi)
+  * [pixlr editor](https://pixlr.com/editor/), Chrome, with Flash enabled
 * Font
   * [IDEO fontmap](http://fontmap.ideo.com)
   * [Google Fonts](https://fonts.google.com)

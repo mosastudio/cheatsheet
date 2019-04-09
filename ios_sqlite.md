@@ -6,13 +6,12 @@
   * changes
   * [user_version](https://github.com/ccgus/fmdb/issues/210)
 
-* [SQL Examples, w3schools](https://www.w3schools.com/sql/sql_examples.asp)
-
-* [Datatypes in SQLite](https://www.sqlite.org/datatype3.html)
-  * INTEGER
-  * REAL
-  * TEXT
-  * BLOB
+* [SQLite Tutorial](https://www.tutorialspoint.com/sqlite/index.htm)
+  * [Datatypes in SQLite](https://www.sqlite.org/datatype3.html)
+    * INTEGER
+    * REAL
+    * TEXT
+    * BLOB
 
 * Create Table
 ``` SQL
@@ -31,11 +30,7 @@ AUTOINCREMENT
 
 * Alter Table
 ```SQL
-ALTER TABLE device
-ADD manufacturer TEXT;
-
-ALTER TABLE device
-DROP COLUMN manufacturer;
+ALTER TABLE device ADD COLUMN manufacturer TEXT;
 ```
 
 * INSERT INTO
@@ -44,101 +39,76 @@ INSERT INTO device (uuid, name, info, created, updated)
 VALUES ('5cb2d6f7-8e99-474f-8998-6a8135f33456', 'the red device', '', 1554790063.342, 1554790063.342);
 ```
 
+* SELECT
 ```SQL
-INSERT INTO
-Insert data in specific columns
+SELECT * FROM device;
+
+SELECT uuid, name FROM device;
 ```
 
 * UPDATE
 ``` SQL
+# update all
 UPDATE device
 SET name = 'the green device', info = 'some information', updated = 1554791346.762;
 
+# update, with WHERE clause
 UPDATE device
 SET name = 'the green device', info = 'some information', updated = 1554791346.762
 WHERE uuid = '5cb2d6f7-8e99-474f-8998-6a8135f33456'
 ```
 
-``` SQL
-Update Table
-UPDATE Multiple records
-
-```
-
 * DELETE
 ```SQL
-DELETE FROM device WHERE uuid = '5cb2d6f7-8e99-474f-8998-6a8135f33456';
+# delete all
 DELETE FROM device;
+
+# delete, with WHERE clause
+DELETE FROM device WHERE uuid = '5cb2d6f7-8e99-474f-8998-6a8135f33456';
 ```
 
-* SELECT
+* Operator
+  * [LIKE](https://www.tutorialspoint.com/sqlite/sqlite_like_clause.htm)
 ```SQL
-SELECT *
-FROM device
-WHERE uuid = 5cb2d6f7-8e99-474f-8998-6a8135f33456
-ORDER BY created ASC;
-
-SELECT *
-FROM device
-ORDER BY updated DESC;
-
-SELECT *
-FROM device
-ORDER BY created ASC, updated DESC;
-
-SELECT uuid, name
-FROM device;
-```
-
-```SQL
-SELECT Column
-SELECT *
-SELECT DISTINCT
-SELECT COUNT(DISTINCT column)
-
-SELECT TOP
-LIMIT
-SELECT TOP PERCENT
-SELECT TOP and add a WHERE Clause
-
-Alias for columns
-```
-
-* 
-```SQL
-MIN
-MAX
-COUNT
-AVG
-SUM
+Arithmetic: +    -    *    /    %
+Comparison: =    !=    >    <    >=    <=
+Logical: AND    EXISTS    IN    NOT IN    LIKE    IS NULL    IS NOT NULL
+Bitwise: &    |    <<    >>
 ```
 
 * WHERE
+  * Specify a condition
+  * AND
+  * OR
+
+* ORDER
 ```SQL
-AND
-OR
-NOT
+SELECT *
+FROM ...
+WHERE ...
+ORDER BY created ASC;
 
-IS NULL
-IS NOT NULL
+SELECT *
+FROM ...
+WHERE ...
+ORDER BY updated DESC;
 
-IN
-NOT IN
-
-BETWEEN?
+SELECT *
+FROM ...
+WHERE ...
+ORDER BY created ASC, updated DESC;
 ```
 
-* ORDER BY
-```SQL
-ORDER BY
-ORDER BY DESC
-ORDER BY Several Columns
-```
+* LIMIT
 
-* JOINS
-```SQL
-INNER JOIN
-LEFT JOIN
-RIGHT JOIN
-Self JOIN
-```
+* DISTINCT
+
+* COUNT
+
+* MIN
+
+* MAX
+
+* AVG
+
+* SUM

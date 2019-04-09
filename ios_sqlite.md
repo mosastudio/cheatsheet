@@ -7,6 +7,34 @@
 
 * [SQL Examples, w3schools](https://www.w3schools.com/sql/sql_examples.asp)
 
+* [Datatypes in SQLite](https://www.sqlite.org/datatype3.html)
+  * INTEGER
+  * REAL
+  * TEXT
+  * BLOB
+
+* Create Table
+``` SQL
+CREATE TABLE IF NOT EXISTS device (
+    uuid TEXT,
+    name TEXT,
+    info TEXT,
+    deleted INTEGER,
+    created REAL,
+    updated REAL
+);
+
+CREATE TABLE IF NOT EXISTS bpms (
+    version INTEGER,
+    origin INTEGER,
+    begin REAL,
+    end REAL,
+    min INTEGER,
+    max INTEGER,
+    details BLOB
+);
+```
+
 * NULL
 ``` SQL
 

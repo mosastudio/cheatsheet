@@ -3,6 +3,7 @@
   * executeUpdate
   * executeQuery
   * executeStatements
+  * changes
   * [user_version](https://github.com/ccgus/fmdb/issues/210)
 
 * [SQL Examples, w3schools](https://www.w3schools.com/sql/sql_examples.asp)
@@ -19,19 +20,8 @@ CREATE TABLE IF NOT EXISTS device (
     uuid TEXT,
     name TEXT,
     info TEXT,
-    deleted INTEGER,
     created REAL,
     updated REAL
-);
-
-CREATE TABLE IF NOT EXISTS bpms (
-    version INTEGER,
-    origin INTEGER,
-    begin REAL,
-    end REAL,
-    min INTEGER,
-    max INTEGER,
-    details BLOB
 );
 ```
 
@@ -42,11 +32,25 @@ CREATE TABLE IF NOT EXISTS bpms (
 
 * INSERT INTO
 ```SQL
+INSERT INTO device (uuid, name, info, created, updated)
+VALUES ('5cb2d6f7-8e99-474f-8998-6a8135f33456', 'the red device', '', 1554790063.342, 1554790063.342);
+```
+
+```SQL
 INSERT INTO
 Insert data in specific columns
 ```
 
 * UPDATE
+``` SQL
+UPDATE device
+SET name = 'the green device', info = 'some information', updated = 1554791346.762;
+
+UPDATE device
+SET name = 'the green device', info = 'some information', updated = 1554791346.762
+WHERE uuid = '5cb2d6f7-8e99-474f-8998-6a8135f33456'
+```
+
 ``` SQL
 Update Table
 UPDATE Multiple records
@@ -55,11 +59,29 @@ UPDATE Multiple records
 
 * DELETE
 ```SQL
-DELETE FROM customers WHERE %@ < %f
-DELETE FROM %@
+DELETE FROM device WHERE uuid = '5cb2d6f7-8e99-474f-8998-6a8135f33456';
+DELETE FROM device;
 ```
 
 * SELECT
+```SQL
+SELECT *
+FROM device
+WHERE uuid = 5cb2d6f7-8e99-474f-8998-6a8135f33456
+ORDER BY created ASC;
+
+SELECT *
+FROM device
+ORDER BY updated DESC;
+
+SELECT *
+FROM device
+ORDER BY created ASC, updated DESC;
+
+SELECT uuid, name
+FROM device;
+```
+
 ```SQL
 SELECT Column
 SELECT *

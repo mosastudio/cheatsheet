@@ -26,6 +26,8 @@ CREATE TABLE IF NOT EXISTS device (
 PRIMARY KEY
 
 AUTOINCREMENT
+
+DEFAULT
 ```
 
 * Alter Table
@@ -72,7 +74,7 @@ DELETE FROM device WHERE uuid = '5cb2d6f7-8e99-474f-8998-6a8135f33456';
 ```SQL
 Arithmetic: +    -    *    /    %
 Comparison: =    !=    >    <    >=    <=
-Logical: AND    EXISTS    IN    NOT IN    LIKE    IS NULL    IS NOT NULL
+Logical: AND    OR    EXISTS    IN    NOT IN    LIKE    IS NULL    IS NOT NULL
 Bitwise: &    |    <<    >>
 ```
 
@@ -100,8 +102,19 @@ ORDER BY created ASC, updated DESC;
 ```
 
 * LIMIT
+```SQL
+SELECT * FROM device ORDER BY updated DESC LIMIT 1
+```
+
+* ALIAS
+```SQL
+SELECT uuid, (updated - created) as diff FROM device;
+```
 
 * DISTINCT
+```SQL
+SELECT DISTINCT name FROM device;
+```
 
 * COUNT
 

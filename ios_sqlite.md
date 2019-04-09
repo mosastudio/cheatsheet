@@ -17,17 +17,25 @@
 * Create Table
 ``` SQL
 CREATE TABLE IF NOT EXISTS device (
-    uuid TEXT,
+    uuid TEXT NOT NULL,
     name TEXT,
     info TEXT,
-    created REAL,
-    updated REAL
+    created REAL NOT NULL,
+    updated REAL NOT NULL
 );
+
+PRIMARY KEY
+
+AUTOINCREMENT
 ```
 
-* NULL
-``` SQL
+* Alter Table
+```SQL
+ALTER TABLE device
+ADD manufacturer TEXT;
 
+ALTER TABLE device
+DROP COLUMN manufacturer;
 ```
 
 * INSERT INTO

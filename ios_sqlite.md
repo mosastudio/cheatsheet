@@ -12,6 +12,7 @@
     * REAL
     * TEXT
     * BLOB
+  * [GROUP BY](https://www.tutorialspoint.com/sqlite/sqlite_group_by.htm)
   * [JOINS](https://www.tutorialspoint.com/sqlite/sqlite_using_joins.htm)
     * Cross Join
     * Inner Join

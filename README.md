@@ -49,6 +49,14 @@ This is my cheat sheet.
     * $ brew install
   * ex. mongodb, nvm, wget, ..
 
+## OpenCL
+
+* [OpenCL Programming Guide](https://www.amazon.com/OpenCL-Programming-Guide-Aaftab-Munshi/dp/0321749642)
+  * [Installation](https://code.google.com/archive/p/opencl-book-samples/wikis/Installation.wiki)
+  * [Samples](https://github.com/bgaster/opencl-book-samples)
+    * [HelloWorld](https://github.com/bgaster/opencl-book-samples/tree/master/src/Chapter_2/HelloWorld)
+    * [OpenCLInfo](https://github.com/bgaster/opencl-book-samples/tree/master/src/Chapter_3/OpenCLInfo)
+
 ## Other
 
 * interview

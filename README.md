@@ -49,6 +49,12 @@ This is my cheat sheet.
     * $ brew install
   * ex. mongodb, nvm, wget, ..
 
+## System Configuration
+
+* Delete old Google profile photo
+  * [Ref.](https://support.google.com/photos/thread/143925?hl=en)
+  * go to: https://get.google.com/albumarchive
+
 ## OpenCL
 
 * [OpenCL Programming Guide](https://www.amazon.com/OpenCL-Programming-Guide-Aaftab-Munshi/dp/0321749642)

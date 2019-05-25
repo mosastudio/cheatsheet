@@ -6,6 +6,7 @@ This is my cheat sheet.
 
 * [iOS App](iosapp.md)
 * [JavaScript](javascript.md)
+* [macOS](macos.md)
 * [Git](git.md)
 
 ## Programming
@@ -38,16 +39,6 @@ This is my cheat sheet.
   * [Google Fonts](https://fonts.google.com)
 * Color
   * [name that color](http://chir.ag/projects/name-that-color/)
-
-## Mac OS
-
-* [Homebrew](https://brew.sh/), The missing package manager for macOS
-  * Install Homebrew
-    * $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  * command line
-    * $ brea update
-    * $ brew install
-  * ex. mongodb, nvm, wget, ..
 
 ## System Configuration
 

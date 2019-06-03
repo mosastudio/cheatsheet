@@ -31,6 +31,7 @@ open class UIResponder : NSObject, UIResponderStandardEditActions {
     open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?)
 }
 
+// UIControl.Event
 public struct Event : OptionSet {
     public static var touchDown: UIControl.Event { get }
     public static var touchUpInside: UIControl.Event { get }

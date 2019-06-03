@@ -1,5 +1,13 @@
 ## UIKit
 
+```Swift
+// singleton
+class TheClass {
+  private init() {}
+  static let shared = TheClass()
+}
+```
+
 ```objective-c
 @interface UIViewController : UIResponder
 - (void)viewDidLoad;

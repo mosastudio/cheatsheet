@@ -78,8 +78,8 @@ open class UICollectionView : UIScrollView, UIDataSourceTranslating {
 * Dialog, similar as UIAlertController
   * [UIAlertController class ref.](https://developer.apple.com/documentation/uikit/uialertcontroller#//apple_ref/doc/uid/TP40014538-CH1-SW2), The UIAlertController class is intended to be used as-is and does not support subclassing. The view hierarchy for this class is private and must not be modified.
   * Progress HUD
-    * [HUD, MBProgressHUD](https://github.com/jdg/MBProgressHUD)
-    * [HUD, SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)
+    * [MBProgressHUD](https://github.com/jdg/MBProgressHUD)
+    * [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)
   * Alert View / Alert Controller
     * [SCLAlertView, Swift](https://github.com/vikmeup/SCLAlertView-Swift)
     * [SCLAlertView, ObjC](https://github.com/dogo/SCLAlertView)

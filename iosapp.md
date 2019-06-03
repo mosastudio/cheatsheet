@@ -4,6 +4,7 @@
   * Int, Double, String, Array, Dictionary, Set, ..
 * [init](ios_init.md)
 * [Thread](ios_thread.md)
+* [UIKit](ios_uikit.md)
 * [SQLite, FMDB, SQL](ios_sqlite.md)
 
 ## Apple, links
@@ -198,68 +199,6 @@ ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?languag
 ## Keyboard
 
 * [Ref](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html)
-
-## UIKit
-
-```objective-c
-@interface UIViewController : UIResponder
-- (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)viewWillDisappear:(BOOL)animated;
-- (void)viewDidDisappear:(BOOL)animated;
-- (void)viewWillLayoutSubviews;
-- (void)viewDidLayoutSubviews;
-@end
-
-@interface UIResponder : NSObject
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
-- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
-@end
-
-@interface UIControl : UIView
-- (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event;
-- (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event;
-- (void)endTrackingWithTouch:(nullable UITouch *)touch withEvent:(nullable UIEvent *)event;
-- (void)cancelTrackingWithEvent:(nullable UIEvent *)event;
-
-- (void)addTarget:(nullable id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
-@end
-
-@interface UIView : UIResponder
-@property(nonatomic,getter=isExclusiveTouch) BOOL       exclusiveTouch __TVOS_PROHIBITED;
-@end
-
-typedef NS_OPTIONS(NSUInteger, UIControlEvents) {
-    UIControlEventTouchDown                                         = 1 <<  0,      // on all touch downs
-    UIControlEventTouchUpInside                                     = 1 <<  6,
-    UIControlEventTouchUpOutside                                    = 1 <<  7,
-
-    UIControlEventValueChanged                                      = 1 << 12,     // sliders, etc.
-
-    UIControlEventAllEvents                                         = 0xFFFFFFFF
-};
-
-@interface UILabel : UIView
-@end
-@interface UITextField : UIControl <UITextInput>
-@end
-@interface UITextView : UIScrollView <UITextInput>
-@end
-```
-
-* Custom UIAlertController
-  * [UIAlertController class ref.](https://developer.apple.com/documentation/uikit/uialertcontroller#//apple_ref/doc/uid/TP40014538-CH1-SW2), The UIAlertController class is intended to be used as-is and does not support subclassing. The view hierarchy for this class is private and must not be modified.
-  * [HUD, MBProgressHUD](https://github.com/jdg/MBProgressHUD)
-  * [HUD, SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)
-  * [SCLAlertView, Swift](https://github.com/vikmeup/SCLAlertView-Swift)
-  * [SCLAlertView, ObjC](https://github.com/dogo/SCLAlertView)
-  * [SDCAlertView](https://github.com/sberrevoets/SDCAlertView)
-  * [PopupDialog](https://github.com/orderella/PopupDialog)  
-  * [PMAlertController](https://github.com/pmusolino/PMAlertController)
-  * [SwiftMessages](https://github.com/SwiftKickMobile/SwiftMessages)
 
 ## Extensions
 

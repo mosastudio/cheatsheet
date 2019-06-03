@@ -1,69 +1,64 @@
 ## UIKit
 
 ```Swift
-// singleton
-class TheClass {
-  private init() {}
-  static let shared = TheClass()
+open class UIViewController : UIResponder, NSCoding, UIAppearanceContainer, UITraitEnvironment, UIContentContainer, UIFocusEnvironment {
+    open func viewDidLoad()
+    open func viewWillAppear(_ animated: Bool)
+    open func viewDidAppear(_ animated: Bool)
+    open func viewWillDisappear(_ animated: Bool)
+    open func viewDidDisappear(_ animated: Bool)
+    open func viewWillLayoutSubviews()
+    open func viewDidLayoutSubviews()    
+}
+
+open class UIControl : UIView {
+    open func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool
+    open func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool
+    open func endTracking(_ touch: UITouch?, with event: UIEvent?)
+    open func cancelTracking(with event: UIEvent?)
+
+    open func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControl.Event)
+}
+
+open class UIView : UIResponder, NSCoding, UIAppearance, UIAppearanceContainer, UIDynamicItem, UITraitEnvironment, UICoordinateSpace, UIFocusItem, UIFocusItemContainer, CALayerDelegate {
+    open var isExclusiveTouch: Bool
+}
+
+open class UIResponder : NSObject, UIResponderStandardEditActions {
+    open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?)
+    open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
+    open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?)
+}
+
+public struct Event : OptionSet {
+    public static var touchDown: UIControl.Event { get }
+    public static var touchUpInside: UIControl.Event { get }
+    public static var touchUpOutside: UIControl.Event { get }
+    public static var valueChanged: UIControl.Event { get }    // slider, etc.
+}
+
+open class UILabel : UIView, NSCoding, UIContentSizeCategoryAdjusting {
+}
+open class UITextField : UIControl, UITextInput, NSCoding, UIContentSizeCategoryAdjusting {
+}
+open class UITextView : UIScrollView, UITextInput, UIContentSizeCategoryAdjusting {
+}
+open class UITableView : UIScrollView, NSCoding, UIDataSourceTranslating {
+}
+open class UICollectionView : UIScrollView, UIDataSourceTranslating {
 }
 ```
 
-```objective-c
-@interface UIViewController : UIResponder
-- (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)viewWillDisappear:(BOOL)animated;
-- (void)viewDidDisappear:(BOOL)animated;
-- (void)viewWillLayoutSubviews;
-- (void)viewDidLayoutSubviews;
-@end
-
-@interface UIResponder : NSObject
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
-- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
-@end
-
-@interface UIControl : UIView
-- (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event;
-- (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event;
-- (void)endTrackingWithTouch:(nullable UITouch *)touch withEvent:(nullable UIEvent *)event;
-- (void)cancelTrackingWithEvent:(nullable UIEvent *)event;
-
-- (void)addTarget:(nullable id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
-@end
-
-@interface UIView : UIResponder
-@property(nonatomic,getter=isExclusiveTouch) BOOL       exclusiveTouch __TVOS_PROHIBITED;
-@end
-
-typedef NS_OPTIONS(NSUInteger, UIControlEvents) {
-    UIControlEventTouchDown                                         = 1 <<  0,      // on all touch downs
-    UIControlEventTouchUpInside                                     = 1 <<  6,
-    UIControlEventTouchUpOutside                                    = 1 <<  7,
-
-    UIControlEventValueChanged                                      = 1 << 12,     // sliders, etc.
-
-    UIControlEventAllEvents                                         = 0xFFFFFFFF
-};
-
-@interface UILabel : UIView
-@end
-@interface UITextField : UIControl <UITextInput>
-@end
-@interface UITextView : UIScrollView <UITextInput>
-@end
-```
-
-* Custom UIAlertController
+* Dialog, similar as UIAlertController
   * [UIAlertController class ref.](https://developer.apple.com/documentation/uikit/uialertcontroller#//apple_ref/doc/uid/TP40014538-CH1-SW2), The UIAlertController class is intended to be used as-is and does not support subclassing. The view hierarchy for this class is private and must not be modified.
-  * [HUD, MBProgressHUD](https://github.com/jdg/MBProgressHUD)
-  * [HUD, SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)
-  * [SCLAlertView, Swift](https://github.com/vikmeup/SCLAlertView-Swift)
-  * [SCLAlertView, ObjC](https://github.com/dogo/SCLAlertView)
-  * [SDCAlertView](https://github.com/sberrevoets/SDCAlertView)
-  * [PopupDialog](https://github.com/orderella/PopupDialog)  
-  * [PMAlertController](https://github.com/pmusolino/PMAlertController)
-  * [SwiftMessages](https://github.com/SwiftKickMobile/SwiftMessages)
+  * Progress HUD
+    * [HUD, MBProgressHUD](https://github.com/jdg/MBProgressHUD)
+    * [HUD, SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)
+  * Alert View / Alert Controller
+    * [SCLAlertView, Swift](https://github.com/vikmeup/SCLAlertView-Swift)
+    * [SCLAlertView, ObjC](https://github.com/dogo/SCLAlertView)
+    * [SDCAlertView](https://github.com/sberrevoets/SDCAlertView)
+    * [PopupDialog](https://github.com/orderella/PopupDialog)  
+    * [PMAlertController](https://github.com/pmusolino/PMAlertController)
+    * [SwiftMessages](https://github.com/SwiftKickMobile/SwiftMessages)

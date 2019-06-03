@@ -50,6 +50,30 @@ open class UICollectionView : UIScrollView, UIDataSourceTranslating {
 }
 ```
 
+* Push
+
+```
+    navigationController.pushViewController(vc, animated: true)
+```
+
+* present
+
+```
+    self.present(vc, animated: true, completion: nil)
+```
+
+* addSubView
+
+```
+    self.view.addSubview(customView)
+```
+
+```
+    if let window = UIApplication.shared.keyWindow {
+        window.addSubview(customView);
+    }
+```
+
 * Dialog, similar as UIAlertController
   * [UIAlertController class ref.](https://developer.apple.com/documentation/uikit/uialertcontroller#//apple_ref/doc/uid/TP40014538-CH1-SW2), The UIAlertController class is intended to be used as-is and does not support subclassing. The view hierarchy for this class is private and must not be modified.
   * Progress HUD

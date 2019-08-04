@@ -22,8 +22,6 @@ This is my cheat sheet.
 * Facebook
   * [Developers](https://developers.facebook.com/)
   * [Facebook Audience Network](https://developers.facebook.com/docs/audience-network/)
-* [Website on Bitbucket](https://confluence.atlassian.com/bitbucket/publishing-a-website-on-bitbucket-cloud-221449776.html)
-  * the repository name: {accountname}.bitbucket.io
 * [TIOBE Index](https://www.tiobe.com/tiobe-index/), the programming language of XXXX
 * View, Convert
   * [browserling, conversion, encrypt, decrypt, ..](https://www.browserling.com/tools/)
@@ -53,6 +51,15 @@ This is my cheat sheet.
   * [Samples](https://github.com/bgaster/opencl-book-samples)
     * [HelloWorld](https://github.com/bgaster/opencl-book-samples/tree/master/src/Chapter_2/HelloWorld)
     * [OpenCLInfo](https://github.com/bgaster/opencl-book-samples/tree/master/src/Chapter_3/OpenCLInfo)
+
+## Web, frontend
+
+* w3schools
+  * [Responsive image grid](https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp)
+  * [Image grid](https://www.w3schools.com/howto/howto_js_image_grid.asp)
+
+* [Website on Bitbucket](https://confluence.atlassian.com/bitbucket/publishing-a-website-on-bitbucket-cloud-221449776.html)
+  * the repository name: {accountname}.bitbucket.io
 
 ## Other
 

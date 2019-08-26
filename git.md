@@ -10,3 +10,10 @@ $ git revert {commit_id}'
 $ git reset HEAD^ --hard    # reset the branch to the parent of the current commit
 $ git push origin -f        # force-push it to the remote.
 ```
+
+## diff, apply
+
+```sh
+$ git diff > ~/xxxx.diff
+$ git apply ~/xxxx.diff
+```

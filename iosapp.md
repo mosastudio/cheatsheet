@@ -96,6 +96,9 @@ $ pod install
 
 $ open temp.xcworkspace
 
+# pod search, it will list `Source`, and available `Versions`
+$ pod search MBProgressHUD
+
 # And, some other commands
 $ pod help
 $ pod outdated

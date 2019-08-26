@@ -51,11 +51,11 @@ $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/lo
 # -n    show the line number
 # -I    Ignore binary files.
 $ grep -irn "keyword” .
-$ grep -irl "keyword" .
+$ grep -irI "keyword" .
 
 # find a file with a name
 $ find . | grep -irn "filename"
-$ find . | grep -irl "filename"
+$ find . | grep -irI "filename"
 
 # list all the files with certain extensions
 $ find . -iregex '.*\(mp4\)'

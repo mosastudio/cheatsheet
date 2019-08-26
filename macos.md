@@ -59,7 +59,14 @@ $ find . | grep -irl "filename"
 
 # list all the files with certain extensions
 $ find . -iregex '.*\(mp4\)'
-$ find . -iregex '.*\(mp3\|mp4\)’
+
+# Find all files in the current directory and its subdirectories, with the extensions
+# Ref. https://askubuntu.com/questions/1110866/find-all-files-in-the-current-directory-and-its-subdirectories-with-the-extensio
+$ ls -l -R | grep -i '\.\(jpg\|gif\|png\|jpeg\)$'
+
+# Sort files alphabetically before processing
+# Ref. https://askubuntu.com/questions/662339/sort-files-alphabetically-before-processing
+$ find . -type f -print0 | sort -z | xargs -0 -L 1
 ```
 
 ## loading

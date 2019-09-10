@@ -79,6 +79,9 @@
 * [CocoaPods](https://cocoapods.org/), it is a dependency manager for ..
 * Install
   * $ sudo gem install cocoapods
+* Update
+  * just install again
+  * $ sudo gem install cocoapods  
 * command line, ex.
 
 ```sh

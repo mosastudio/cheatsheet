@@ -17,3 +17,7 @@ $ git push origin -f        # force-push it to the remote.
 $ git diff > ~/xxxx.diff
 $ git apply ~/xxxx.diff
 ```
+
+## .gitkeep
+
+* [Ref](https://stackoverflow.com/questions/7229885/what-are-the-differences-between-gitignore-and-gitkeep)

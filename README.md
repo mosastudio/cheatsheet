@@ -1,6 +1,7 @@
 ## Cheat Sheet
 
 This is my cheat sheet.
+[URL and shortcuts](shortcut.md)
 
 ## In detail
 

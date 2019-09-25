@@ -39,7 +39,9 @@
 * [Material icons, Google](https://material.io/tools/icons/)
 * [App Icon Maker](http://appiconmaker.co/)
 * [App Screenshot Maker](https://appinstitute.com/app-screenshot-maker/)
-* [App Store Ranking](https://www.qimai.cn/rank/index/brand/all/genre/6013/device/iphone/country/us/date/2018-11-11)
+* App Store Ranking
+  * [qimai](https://www.qimai.cn/rank/index/brand/all/genre/6013/device/iphone/country/us/date/2018-11-11)
+  * [App Annie](https://www.appannie.com/cn/?utm_source=dcplus.com.tw&utm_medium=referral&utm_content=A0177&utm_campaign=dcplus)
 
 ## Xcode
 

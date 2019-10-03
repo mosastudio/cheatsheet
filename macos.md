@@ -101,3 +101,11 @@ $ df
 # display the first 32 bytes
 $ od -t x1 -N 32 'filename.ext'
 ```
+
+## change the default app to open .txt files
+
+* control + click a .txt file
+* Get info
+* Open with
+* select an app
+* press "Change All..."

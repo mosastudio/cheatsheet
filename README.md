@@ -39,6 +39,9 @@ This is my cheat sheet.
   * [Google Fonts](https://fonts.google.com)
 * Color
   * [name that color](http://chir.ag/projects/name-that-color/)
+* ASCII
+  * [wiki](https://en.wikipedia.org/wiki/ASCII)
+  * mac shell, check the binary file, $ od -t x1 -N 32 'fiename.ext'
 
 ## System Configuration
 

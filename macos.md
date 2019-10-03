@@ -94,3 +94,10 @@ $ sudo tcpdump
 $ df
 
 ```
+
+## display the file
+
+```sh
+# display the first 32 bytes
+$ od -t x1 -N 32 'filename.ext'
+```

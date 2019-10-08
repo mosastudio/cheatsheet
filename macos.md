@@ -109,3 +109,8 @@ $ od -t x1 -N 32 'filename.ext'
 * Open with
 * select an app
 * press "Change All..."
+
+## Sidecar
+
+* [Enable Sidecar on older macOS devices](http://dev.zeppel.eu/luca/SidecarCorePatch)
+* Another app with similar func, [Duet](https://apps.apple.com/tw/app/duet-display/id935754064)

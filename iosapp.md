@@ -224,6 +224,23 @@ ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?languag
   * Localizable.strings
   * InfoPlist.strings
 
+## Testing
+
+* [Ref](https://www.raywenderlich.com/960290-ios-unit-testing-and-ui-testing-tutorial#toc-anchor-016)
+* XCTest
+  * setUp()
+  * tearDown()
+* XCTAssert
+  * XCTAssert
+  * XCTAssertNil
+  * XCTAssertNotNil  
+  * XCTAssertEqual
+  * XCTAssertEqual w/ accuracy
+  * XCTAssertNotEqual
+  * XCTAssertNotEqual w/ accuracy
+  * XCTFail
+* Code coverage: edit the scheme
+
 ## Common
 
 * preprocessor

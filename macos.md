@@ -42,6 +42,14 @@ $ brew install
 $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 ```
 
+## rename several files
+
+[Ref](https://stackoverflow.com/questions/4787413/)
+
+```sh
+for f in * ; do mv -- "$f" "PRE_$f" ; done
+```
+
 ## find, grep
 
 ```sh
@@ -95,7 +103,7 @@ $ df
 
 ```
 
-## display the file
+## display the file (binary)
 
 ```sh
 # display the first 32 bytes

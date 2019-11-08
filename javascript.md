@@ -77,12 +77,12 @@ function Person(firstName, lastName) {
   this.lastName = lastName;
 }
 
-var boy = new Person('Johnny', 'Jackson');
+const boy = new Person('Johnny', 'Jackson');
 
 console.log(JSON.stringify(boy)); // {"firstName":"Johnny","lastName":"Jackson"}
 
 // sort
-var nums = [1, 3, 7, 4, 12, 120, 5, 13];
+const nums = [1, 3, 7, 4, 12, 120, 5, 13];
 
 // default, convert to string, and then comapre
 nums.sort();
@@ -98,10 +98,10 @@ console.log(JSON.stringify(nums)); // [1,3,4,5,7,12,13,120]
 ## const, let, var in ES6
 
 * `const`
-  * Can not be reassigned
+  * Can not be re-assigned
   * But, a `const` object can have properties mutated
 
-```
+```JS
 "use strict";
 
 const obj = {};
@@ -115,6 +115,79 @@ obj = {     // TypeError: Assignment to constant variable.
   "age": 25
 }
 console.log("obj: " + JSON.stringify(obj));
+```
+
+* `let`
+  * block scoped
+  * Can not be re-declared
+
+* `var`
+  * function scoped
+  * Can be re-declared
+
+```JS
+"use strict";
+
+function subFunc() {
+  console.log(x); // ReferenceError: x is not defined
+  let x = 100;
+  console.log(x); // 100
+}
+
+subFunc();
+console.log(x);   // ReferenceError: x is not defined
+```
+
+```JS
+"use strict";
+
+function subFunc() {
+  console.log(x); // undefined
+  var x = 100;
+  console.log(x); // 100
+}
+
+subFunc();
+console.log(x);   // ReferenceError: x is not defined
+```
+
+```JS
+"use strict";
+
+function subFunc() {
+  for (let i = 0; i < 5; i++) {
+    console.log(i); // 0, 1, 2, 3, 4
+  }
+  console.log(i);   // ReferenceError: i is not defined
+}
+
+subFunc();
+```
+
+```JS
+"use strict";
+
+function subFunc() {
+  for (var i = 0; i < 5; i++) {
+    console.log(i); // 0, 1, 2, 3, 4
+  }
+  console.log(i);   // 5
+}
+
+subFunc();
+```
+
+```JS
+"use strict";
+
+function subFunc() {
+  var i = "john";
+  var i = 28;
+  let j = "jessica";
+  let j = 25;   // SyntaxError: Identifier 'j' has already been declared
+}
+
+subFunc();
 ```
 
 ## conversion

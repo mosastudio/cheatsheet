@@ -10,7 +10,7 @@
 
 | | | |
 |-|-|-|
-| ES6 | ES2015 | arrow functions, promises |
+| ES6 | ES2015 | arrow functions, promises, `const`, `let` |
 | ES7 | ES2016 | |
 | ES8 | ES2017 | |
 
@@ -93,6 +93,28 @@ nums.sort(function(a, b) {
     return a - b;
 });
 console.log(JSON.stringify(nums)); // [1,3,4,5,7,12,13,120]
+```
+
+## const, let, var in ES6
+
+* `const`
+  * Can not be reassigned
+  * But, a `const` object can have properties mutated
+
+```
+"use strict";
+
+const obj = {};
+obj["name"] = "john";
+console.log(obj.name);
+obj.age = 28;
+console.log(obj.age);
+
+obj = {     // TypeError: Assignment to constant variable.
+  "name": "jessica",
+  "age": 25
+}
+console.log("obj: " + JSON.stringify(obj));
 ```
 
 ## conversion

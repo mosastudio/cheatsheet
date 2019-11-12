@@ -245,7 +245,11 @@ ex. https://developer.apple.com:443/documentation/uikit/uiviewcontroller?languag
 
 * preprocessor
   * Objective-C: "Preprocessor Macros"
+
+* Active Compilation Conditions  
   * Swift: "Active Compilation Conditions"
+  * By definition, the Swift compiler has no preprocessor
+
 * LaunchScreen.xib
   * O: UIImageView, UILabel, ..
   * X: custom subclass

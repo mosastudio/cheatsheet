@@ -42,7 +42,7 @@
 * App Store Ranking
   * [qimai](https://www.qimai.cn/rank/index/brand/all/genre/6013/device/iphone/country/us/date/2018-11-11)
   * [App Annie](https://www.appannie.com/cn/?utm_source=dcplus.com.tw&utm_medium=referral&utm_content=A0177&utm_campaign=dcplus)
-
+* [Awesome list](https://awesomelists.net/4-iOS/0-All--page1--sortBy-stars/)
 ## Xcode
 
 * Save disk space, [SO Thread](https://apple.stackexchange.com/questions/287307/reduce-size-of-the-xcode-application)

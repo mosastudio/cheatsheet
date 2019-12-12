@@ -36,7 +36,6 @@
 &: iPhone Settings -> Display & Brightness -> View -> Zoomed
 
 * [OSStatus, Apple API errors](https://www.osstatus.com/)
-* [Material icons, Google](https://material.io/tools/icons/)
 * [App Icon Maker](http://appiconmaker.co/)
 * [App Screenshot Maker](https://appinstitute.com/app-screenshot-maker/)
 * App Store Ranking

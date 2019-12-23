@@ -110,6 +110,37 @@ $ pod update
 
 ```
 
+## Carthage
+
+* [Carthage](https://github.com/Carthage/Carthage)
+* Install
+  * $ brew install carthage
+* command line, ex.
+
+```sh
+$ touch Cartfile
+
+# edit the file
+
+$ carthage update
+# Update and rebuild the project's dependencies
+
+# Cartfile.resolved
+#      lists the versions that were actually built for each framework
+# Carthage/Build/
+#      contains the binary frameworks and debug information for each dependency
+# Carthage/Checkouts
+
+# Xcode, targets’ General settings tab, drag the .framework to `Frameworks, libraries, and Embedded Content`
+
+# Xcode, targets’ Build Phases settings tab, new Run Script Phrase
+#       /usr/local/bin/carthage copy-frameworks
+#       /cart-input.xcfilelist
+#       /cart-output.xcfilelist
+
+$ carthage bootstrap
+```
+
 ## How-to
 
 | |iPhone|iPhone X|

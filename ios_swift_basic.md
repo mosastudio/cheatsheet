@@ -1,5 +1,17 @@
 * class instances are passed by reference; structs are passed by value. 
 
+* stride
+
+```
+    // not included
+    from i in stride(from: , to: , by: ) {
+    }
+    
+    // possibly included
+    from i in stride(from: , through: , by: ) {
+    }
+```
+
 * [Numbers, Data, and Basic Values](https://developer.apple.com/documentation/foundation/numbers_data_and_basic_values)
 
   * Int
@@ -13,11 +25,16 @@
 ```
     //  a collection of characters
     let string1 = "Hello"
-    let characters = Array(string1)
+    var characters = Array(string1)
+    characters.remove(at: 0)
+    let string2 = String(characters) // "ello"
 
-    let intValue = -10
-    let string2 = String(intValue) // "-10"
+    let intValue1 = -10
+    let string3 = String(intValue1) // "-10"
+    let intValue2 = Int(string3) // type: Int?
+```
 
+```
     func hasPrefix(_ prefix: String) -> Bool
     func hasSuffix(_ suffix: String) -> Bool
 

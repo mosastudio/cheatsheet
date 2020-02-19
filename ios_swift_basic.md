@@ -11,6 +11,13 @@
   * String
 
 ```
+    //  a collection of characters
+    let string1 = "Hello"
+    let characters = Array(string1)
+
+    let intValue = -10
+    let string2 = String(intValue) // "-10"
+
     func hasPrefix(_ prefix: String) -> Bool
     func hasSuffix(_ suffix: String) -> Bool
 
@@ -88,4 +95,22 @@
 ```swift
     var set1 = Set<String>()
     var set2: Set<String> = []
+    
+    // the order of elements is not always the same
+    var array1 = [1, 2, 3, 4, 3, 2, 1]
+    var set3 = Set(array1) // {1, 3, 4, 2}
+    var array2 = Array(set3) // [1, 3, 4, 2]
+    
+    for num in set3 {
+        print("\(num)")
+    }
+}
+```
+
+```
+    var count: Int { get }
+    
+    func contains(_ member: Element) -> Bool
+    func insert(_ newMember: Element) -> (inserted: Bool, memberAfterInsert: Element)
+    func remove(_ member: Element) -> Element?
 ```

@@ -40,6 +40,9 @@
 
     func removeFirst() -> Character
     func removeLast() -> Character
+    
+    func lowercased() -> String
+    func uppercased() -> String
 ```
 
 * [Collections](https://developer.apple.com/documentation/foundation/collections)
@@ -121,7 +124,6 @@
     for num in set3 {
         print("\(num)")
     }
-}
 ```
 
 ```

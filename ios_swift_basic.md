@@ -32,6 +32,10 @@
     let intValue1 = -10
     let string3 = String(intValue1) // "-10"
     let intValue2 = Int(string3) // type: Int?
+    
+    let string4 = "abc.defg.h"
+    let array = string4.split(separator: ".") // type of each element: Substring
+    let string5 = array.joined(separator: "----") // "abc----defg----h"
 ```
 
 ```

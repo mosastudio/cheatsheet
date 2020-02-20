@@ -2,13 +2,13 @@
 
 * stride
 
-```
+```swift
     // not included
-    from i in stride(from: , to: , by: ) {
+    for i in stride(from: 0, to: 10, by: 2) {
     }
-    
+
     // possibly included
-    from i in stride(from: , through: , by: ) {
+    for i in stride(from: 0, through: 10, by: 2) {
     }
 ```
 
@@ -22,7 +22,7 @@
 
   * String
 
-```
+```swift
     //  a collection of characters
     let string1 = "Hello"
     var characters = Array(string1)
@@ -35,10 +35,11 @@
     
     let string4 = "abc.defg.h"
     let array = string4.split(separator: ".") // type of each element: Substring
-    let string5 = array.joined(separator: "----") // "abc----defg----h"
+    let string5 = array.joined() // "abcdefg"
+    let string6 = array.joined(separator: "----") // "abc----defg----h"
 ```
 
-```
+```swift
     func hasPrefix(_ prefix: String) -> Bool
     func hasSuffix(_ suffix: String) -> Bool
 
@@ -54,8 +55,8 @@
   * Array
 
 ```swift
-    var myArr1 = [String]()
-    var myArr2: [String] = []
+    let myArr1 = [String]()
+    let myArr2: [String] = []
     
     for string in myArr1 {
     }
@@ -79,7 +80,19 @@
     func removeLast() -> Element
 ```
 
+```swift
+    func map<T>(_ transform: (Element) throws -> T) rethrows -> [T]
+    func flatMap<SegmentOfResult>(_ transform: (Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element] where SegmentOfResult : Sequence
+    func compactMap<ElementOfResult>(_ transform: (Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]
+    
+    let array1 = [1, 2, 3, nil, 4]
+    let array2 = array1.map { $0 } // array of optional Int, [1, 2, 3, nil, 4]
+    let array3 = array1.compactMap { $0 } // array of Int, [1, 2, 3, 4]
+    let array4 = [[[1, 2], [3, 4, nil, 5]], [[6, 7]]]
+    let array5 = array4.flatMap { $0 } // array of optional Int, [1, 2, 3, 4, nil, 5, 6, 7]
 ```
+
+```swift
     func reduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, Element) throws -> Result) rethrows -> Result
     func min() -> Element?
     func min(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> Element?
@@ -107,30 +120,30 @@
   * Dictionary
 
 ```swift
-    var dict1 = [String: String]()
-    var dict2: [String: String] = [:]
+    let dict1 = [String: String]()
+    let dict2: [String: String] = [:]
     
-    for (key value) in dict1 {
+    for (key, value) in dict1 {
     }
 ```
 
   * Set
 
 ```swift
-    var set1 = Set<String>()
-    var set2: Set<String> = []
+    let set1 = Set<String>()
+    let set2: Set<String> = []
     
     // the order of elements is not always the same
-    var array1 = [1, 2, 3, 4, 3, 2, 1]
-    var set3 = Set(array1) // {1, 3, 4, 2}
-    var array2 = Array(set3) // [1, 3, 4, 2]
+    let array1 = [1, 2, 3, 4, 3, 2, 1]
+    let set3 = Set(array1) // {1, 3, 4, 2}
+    let array2 = Array(set3) // [1, 3, 4, 2]
     
     for num in set3 {
         print("\(num)")
     }
 ```
 
-```
+```swift
     var count: Int { get }
     
     func contains(_ member: Element) -> Bool

@@ -57,14 +57,15 @@
 ```swift
     let myArr1 = [String]()
     let myArr2: [String] = []
+    let myArr3 = Array(repeating: "Hello", count: 5)
     
-    for string in myArr1 {
+    for string in myArr3 {
     }
     
-    for index in myArr1.indices {
+    for index in myArr3.indices {
     }
     
-    for (index, string) in myArr1.enumerated() {
+    for (index, string) in myArr3.enumerated() {
     }
 ```
 

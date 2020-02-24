@@ -82,6 +82,13 @@
 ```
 
 ```swift
+    let myArr4 = ["a", "b", "c", "d", "e", "f", "g", "h"]
+    let myArr5 = myArr4[3..<5]
+    let myArr6 = myArr4.prefix(2)
+    let myArr7 = myArr4.suffix(2)
+```
+
+```swift
     func map<T>(_ transform: (Element) throws -> T) rethrows -> [T]
     func flatMap<SegmentOfResult>(_ transform: (Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element] where SegmentOfResult : Sequence
     func compactMap<ElementOfResult>(_ transform: (Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]
@@ -126,6 +133,10 @@
     
     for (key, value) in dict1 {
     }
+```
+
+```swift
+    init<S>(grouping values: S, by keyForValue: (S.Element) throws -> Key) rethrows where Value == [S.Element], S : Sequence
 ```
 
   * Set

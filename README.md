@@ -83,6 +83,18 @@ This is my cheat sheet.
 * Two's complement, ex. Eight-bit signed integers
 
 ```c
+    -7 % 3 = -1
+    // because
+    //  -7 % 3 = -2
+    //  -7 - (3 * -2) = -1
+
+    7 % -3 = 1
+    // because
+    //  7 % -3 = -2
+    //  7 - (-3 * -2) = 1
+```
+
+```c
        0 = 0000 0000
        1 = 0000 0001
      127 = 0111 1111

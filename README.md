@@ -8,6 +8,9 @@ This is my cheat sheet.
 
 * [iOS App](iosapp.md)
 * [JavaScript](javascript.md)
+* [C++](https://github.com/mosastudio/cppexample)
+  * [macOS, Visual Studio Code](https://www.youtube.com/watch?v=zIIYN_PyUAM)
+  * [macOS, Visual Studio Code, official guideline](https://code.visualstudio.com/docs/languages/cpp)
 * [macOS](macos.md)
 * [Git](git.md)
 
@@ -80,55 +83,6 @@ This is my cheat sheet.
   * http://collabedit.com/
   * https://codeshare.io/
 
-* Two's complement, ex. Eight-bit signed integers
-
-```c
-    -7 % 3 = -1
-    // because
-    //  -7 % 3 = -2
-    //  -7 - (3 * -2) = -1
-
-    7 % -3 = 1
-    // because
-    //  7 % -3 = -2
-    //  7 - (-3 * -2) = 1
-```
-
-```c
-       0 = 0000 0000
-       1 = 0000 0001
-     127 = 0111 1111
-    -128 = 1000 0000
-    -127 = 1000 0001
-      -1 = 1111 1111
-```
-
-* shift operator
-
-```c
-    char a = 32;
-    char b = -32;
-
-    char c = a;
-    char d = b;
-    // c: 0010 0000    d = 1110 0000
-    c = a << 1;
-    d = b << 1;
-    // c: 0100 0000    d = 1100 0000
-    c = a >> 1;
-    d = b >> 1;
-    // c: 0001 0000    d = 1111 0000
-```
-
-* Other bitwise operators
-
-```c
-    ~a       // bitwise NOT
-    a & b    // bitwise AND
-    a | b    // bitwise OR
-    a ^ b    // bitwise XOR
-```
-
 * 64 bit
 
 | |ILP32|LP64 (ex. mac OS, iOS, Linux)|LLP64 (ex. Win)|
@@ -148,14 +102,3 @@ int32_t	longVar	= 0x0a0b0c0d;
 | +1 | 0b | 0c |
 | +2 | 0c | 0b |
 | +3 | 0d | 0a |
-
-* const
-
-[Hint: Read it backwards](https://stackoverflow.com/questions/1143262/what-is-the-difference-between-const-int-const-int-const-and-int-const)
-
-| example | def. | equal to |
-|-|-|-|
-| int * | pointer to int | |
-| int const * | pointer to const int | const int * |
-| int * const | const pointer to int | |
-| int const * const | const pointer to const int | const int * const |

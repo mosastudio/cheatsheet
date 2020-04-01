@@ -1,3 +1,8 @@
+## terminal
+
+* Preferences -> Profiles -> Pro
+  * Set as 'Default'
+
 ## bash
 
 * [difference](http://superuser.com/questions/244964/mac-os-x-bashrc-not-working/244990#244990)

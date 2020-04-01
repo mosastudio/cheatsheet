@@ -44,6 +44,8 @@
 * [Awesome list](https://awesomelists.net/4-iOS/0-All--page1--sortBy-stars/)
 ## Xcode
 
+* Preferences
+  * Fonts & Colors -> Theme -> Classic (Dark)
 * Save disk space, [SO Thread](https://apple.stackexchange.com/questions/287307/reduce-size-of-the-xcode-application)
   * DerivedData
   * iOS DeviceSupport

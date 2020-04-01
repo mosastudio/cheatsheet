@@ -1,7 +1,19 @@
 ## terminal
 
-* Preferences -> Profiles -> Pro
+* Change the theme
+  * Preferences -> Profiles -> Pro
   * Set as 'Default'
+
+* change the default login shell
+  * Preferences -> General -> Shells open with
+    * /bin/bash
+    * /bin/zsh
+
+* the terminal shell
+
+```sh
+$ echo $SHELL
+```
 
 ## bash
 

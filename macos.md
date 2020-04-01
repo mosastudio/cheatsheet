@@ -52,7 +52,7 @@ export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 # Install Homebrew
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-$ brea update
+$ brew update
 $ brew install
 ```
 
@@ -61,8 +61,6 @@ $ brew install
 ```sh
 $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 ```
-
-* in the above case, you may need to use `sudo`
 
 ## rename several files
 

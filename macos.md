@@ -47,6 +47,8 @@ $ brew install
 $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 ```
 
+* in the above case, you may need to use `sudo`
+
 ## rename several files
 
 [Ref](https://stackoverflow.com/questions/4787413/)

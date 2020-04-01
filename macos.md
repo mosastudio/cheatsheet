@@ -15,6 +15,9 @@
 $ echo $SHELL
 ```
 
+* zsh and bash
+  * `$ ln -s "/Users/zick/.bash_profile" ~/.zshrc`
+
 ## bash
 
 * [difference](http://superuser.com/questions/244964/mac-os-x-bashrc-not-working/244990#244990)

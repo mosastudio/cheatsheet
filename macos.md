@@ -4,7 +4,7 @@
   * Preferences -> Profiles -> Pro
   * Set as 'Default'
 
-* change the default login shell
+* Change the default login shell
   * Preferences -> General -> Shells open with
     * /bin/bash
     * /bin/zsh
@@ -15,8 +15,13 @@
 $ echo $SHELL
 ```
 
+## zsh
+
 * zsh and bash
-  * `$ ln -s "/Users/zick/.bash_profile" ~/.zshrc`
+
+```sh
+$ .zshrc
+```
 
 ## bash
 
@@ -27,13 +32,13 @@ $ .bash_profile
 $ .bash_rc
 ```
 
-### ~/.bash_profile
+* ~/.bash_profile
 
 ```sh
 [ -r ~/.bashrc ] && source ~/.bashrc
 ```
 
-### ~/.bash_rc
+* ~/.bash_rc
 
 ```sh
 
@@ -42,6 +47,11 @@ export CLICOLOR=1
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
 ```
+
+## System Preferences
+
+* Keyboard
+  * Shortcuts -> Spotlight -> Disable "Show Spotlight Search"
 
 ## homebrew
 

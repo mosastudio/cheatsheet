@@ -17,7 +17,7 @@ $ echo $SHELL
 
 ## zsh
 
-* zsh and bash
+* zsh
 
 ```sh
 $ .zshrc

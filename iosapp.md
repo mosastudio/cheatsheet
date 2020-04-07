@@ -45,7 +45,14 @@
 ## Xcode
 
 * Preferences
-  * Fonts & Colors -> Theme -> Classic (Dark)
+  * Fonts & Colors
+    * Theme -> Classic (Dark)
+  * Text Editing
+    * Display
+      * Code folding ribbon
+      * Page guide at column: 120
+    * Editing
+      * Including whitespace-only lines
 * Save disk space, [SO Thread](https://apple.stackexchange.com/questions/287307/reduce-size-of-the-xcode-application)
   * DerivedData
   * iOS DeviceSupport

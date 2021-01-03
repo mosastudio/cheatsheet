@@ -86,12 +86,31 @@
 
 ## CocoaPods
 
-* [CocoaPods](https://cocoapods.org/), it is a dependency manager for ..
-* Install
-  * $ sudo gem install cocoapods
-* Update
-  * just install again
-  * $ sudo gem install cocoapods  
+* [Ref.](https://stackoverflow.com/a/64233692)
+
+* install homebrw
+  * $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+* install and setup rbenv (version manager)
+  * $ brew install rbenv ruby-build
+  * edit .bash_profile
+```
+# rbenv (version manager)
+eval "$(rbenv init -)"
+```
+  * install, and config
+    * $ rbenv install 2.6.6
+    * $ rbenv global 2.6.6
+  * verify the activated version
+    * $ ruby -v
+
+* [CocoaPods](https://cocoapods.org/), it is a dependency manager for Swift and Objective-C Cocoa projects.
+  * Install
+    * $ sudo gem install cocoapods
+  * Update
+    * just install again
+    * $ sudo gem install cocoapods
+    
 * command line, ex.
 
 ```sh

@@ -66,11 +66,28 @@ $ brew update
 $ brew install
 ```
 
-## make links
+## Sublime 3
+
+* make links
 
 ```sh
 $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 ```
+
+* package, XML
+  * Command + Shift + P
+  * type "Package Control: Install Package", then Enter
+  * type "Indent XML", then Enter
+
+* package, JSON
+  * Command + Shift + P
+  * type "Package Control: Install Package", then Enter
+  * type "Pretty JSON", then Enter
+
+* To Use, Selection -> Format
+  * Auto Indent (Command K, Command F)
+  * Indent XML
+  * Indent JSon
 
 ## rename several files
 

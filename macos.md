@@ -57,6 +57,7 @@ export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
 * If the keyboard / mouse is lagging
   * https://www.macmeicloud.com/blog/2021/2/6/wireless-keyboard-lagging-on-your-mac-try-these-steps
+  * hold the *Shift* + *Option* Button on your keyboard and click the Bluetooth icon.
 
 ## homebrew
 

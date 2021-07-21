@@ -53,6 +53,11 @@ export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 * Keyboard
   * Shortcuts -> Spotlight -> Disable "Show Spotlight Search"
 
+## Bluetooth Devices
+
+* If the keyboard / mouse is lagging
+  * https://www.macmeicloud.com/blog/2021/2/6/wireless-keyboard-lagging-on-your-mac-try-these-steps
+
 ## homebrew
 
 * [Homebrew](https://brew.sh/), The missing package manager for macOS

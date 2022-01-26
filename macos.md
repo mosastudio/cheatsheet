@@ -130,6 +130,14 @@ $ ls -l -R | grep -i '\.\(jpg\|gif\|png\|jpeg\)$'
 $ find . -type f -print0 | sort -z | xargs -0 -L 1
 ```
 
+## > /dev/null 2>&1
+
+* [Ref](https://www.itread01.com/content/1545454986.html)
+
+```sh
+$ > /dev/null 2>&1
+```
+
 ## loading
 
 ```sh
